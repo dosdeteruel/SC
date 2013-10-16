@@ -13,9 +13,6 @@
 		28AEEB5417C4CA26006EDE3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB5217C4CA26006EDE3E /* InfoPlist.strings */; };
 		28AEEB5617C4CA26006EDE3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AEEB5517C4CA26006EDE3E /* main.m */; };
 		28AEEB5A17C4CA26006EDE3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AEEB5917C4CA26006EDE3E /* AppDelegate.m */; };
-		28AEEB5C17C4CA26006EDE3E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB5B17C4CA26006EDE3E /* Default.png */; };
-		28AEEB5E17C4CA26006EDE3E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB5D17C4CA26006EDE3E /* Default@2x.png */; };
-		28AEEB6017C4CA26006EDE3E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB5F17C4CA26006EDE3E /* Default-568h@2x.png */; };
 		28AEEB6317C4CA26006EDE3E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB6117C4CA26006EDE3E /* MainStoryboard.storyboard */; };
 		28AEEB6E17C4CA26006EDE3E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AEEB6D17C4CA26006EDE3E /* SenTestingKit.framework */; };
 		28AEEB6F17C4CA26006EDE3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AEEB4917C4CA26006EDE3E /* UIKit.framework */; };
@@ -23,9 +20,6 @@
 		28AEEB7817C4CA26006EDE3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB7617C4CA26006EDE3E /* InfoPlist.strings */; };
 		28AEEB7B17C4CA26006EDE3E /* ScoreCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AEEB7A17C4CA26006EDE3E /* ScoreCardTests.m */; };
 		28AEEB8617C4CA4E006EDE3E /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AEEB8517C4CA4E006EDE3E /* ScoreViewController.m */; };
-		28AEEB8917C4CBB6006EDE3E /* IMG_0336.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB8817C4CBB6006EDE3E /* IMG_0336.JPG */; };
-		28AEEB9217C526C7006EDE3E /* BOLA2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB9017C526C7006EDE3E /* BOLA2.jpg */; };
-		28AEEB9317C526C7006EDE3E /* BOLAHOYO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB9117C526C7006EDE3E /* BOLAHOYO.jpg */; };
 		28AEEB9517C52770006EDE3E /* score-card.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB9417C52770006EDE3E /* score-card.jpg */; };
 		2D0757F417F49D6F00117857 /* campoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0757F317F49D6F00117857 /* campoTableViewController.m */; };
 		2D12350417D640F700AA7989 /* PortadaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D12350317D640F700AA7989 /* PortadaViewController.m */; };
@@ -36,12 +30,14 @@
 		AE04516217E7B5F60005EF0D /* elegirPar3.png in Resources */ = {isa = PBXBuildFile; fileRef = AE04515F17E7B5F60005EF0D /* elegirPar3.png */; };
 		AE04516317E7B5F60005EF0D /* elegirPar4.png in Resources */ = {isa = PBXBuildFile; fileRef = AE04516017E7B5F60005EF0D /* elegirPar4.png */; };
 		AE04516417E7B5F60005EF0D /* elegirPar5.png in Resources */ = {isa = PBXBuildFile; fileRef = AE04516117E7B5F60005EF0D /* elegirPar5.png */; };
-		AE52D39117D7A37800AE9977 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE52D39017D7A37800AE9977 /* Default@2x.png */; };
-		AE52D39317D7A38400AE9977 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE52D39217D7A38400AE9977 /* Default-568h@2x.png */; };
+		AE0E2BD2180F4C9E0068F54A /* pantalla-inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD1180F4C9E0068F54A /* pantalla-inicio.png */; };
+		AE0E2BD7180F4D000068F54A /* boton-amarillo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD3180F4D000068F54A /* boton-amarillo.png */; };
+		AE0E2BD8180F4D000068F54A /* boton-azul.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD4180F4D000068F54A /* boton-azul.png */; };
+		AE0E2BD9180F4D000068F54A /* boton-blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD5180F4D000068F54A /* boton-blanco.png */; };
+		AE0E2BDA180F4D000068F54A /* boton-rojo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD6180F4D000068F54A /* boton-rojo.png */; };
 		AE7A626317DFCEEC00352992 /* statsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7A626217DFCEEC00352992 /* statsViewController.m */; };
 		AE83136A17DFC64600715A0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136917DFC64600715A0B /* icon.png */; };
 		AE83136C17DFC65200715A0B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136B17DFC65200715A0B /* icon@2x.png */; };
-		AE95D8EA17DFBAE0006443F8 /* pantalla-inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E617DFBAE0006443F8 /* pantalla-inicio.png */; };
 		AE95D8EB17DFBAE0006443F8 /* pantalla-score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */; };
 		AE95D8EC17DFBAE0006443F8 /* pelotagolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */; };
 		AE95D8ED17DFBAE0006443F8 /* score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E917DFBAE0006443F8 /* score-card.png */; };
@@ -111,9 +107,6 @@
 		28AEEB5717C4CA26006EDE3E /* ScoreCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScoreCard-Prefix.pch"; sourceTree = "<group>"; };
 		28AEEB5817C4CA26006EDE3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28AEEB5917C4CA26006EDE3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28AEEB5B17C4CA26006EDE3E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		28AEEB5D17C4CA26006EDE3E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		28AEEB5F17C4CA26006EDE3E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		28AEEB6217C4CA26006EDE3E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		28AEEB6C17C4CA26006EDE3E /* ScoreCardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreCardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AEEB6D17C4CA26006EDE3E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -123,9 +116,6 @@
 		28AEEB7A17C4CA26006EDE3E /* ScoreCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreCardTests.m; sourceTree = "<group>"; };
 		28AEEB8417C4CA4E006EDE3E /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
 		28AEEB8517C4CA4E006EDE3E /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
-		28AEEB8817C4CBB6006EDE3E /* IMG_0336.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0336.JPG; sourceTree = "<group>"; };
-		28AEEB9017C526C7006EDE3E /* BOLA2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOLA2.jpg; sourceTree = "<group>"; };
-		28AEEB9117C526C7006EDE3E /* BOLAHOYO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOLAHOYO.jpg; sourceTree = "<group>"; };
 		28AEEB9417C52770006EDE3E /* score-card.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "score-card.jpg"; sourceTree = "<group>"; };
 		2D0757F217F49D6F00117857 /* campoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = campoTableViewController.h; sourceTree = "<group>"; };
 		2D0757F317F49D6F00117857 /* campoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = campoTableViewController.m; sourceTree = "<group>"; };
@@ -140,13 +130,15 @@
 		AE04515F17E7B5F60005EF0D /* elegirPar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elegirPar3.png; sourceTree = "<group>"; };
 		AE04516017E7B5F60005EF0D /* elegirPar4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elegirPar4.png; sourceTree = "<group>"; };
 		AE04516117E7B5F60005EF0D /* elegirPar5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elegirPar5.png; sourceTree = "<group>"; };
-		AE52D39017D7A37800AE9977 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		AE52D39217D7A38400AE9977 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE0E2BD1180F4C9E0068F54A /* pantalla-inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pantalla-inicio.png"; sourceTree = "<group>"; };
+		AE0E2BD3180F4D000068F54A /* boton-amarillo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-amarillo.png"; sourceTree = "<group>"; };
+		AE0E2BD4180F4D000068F54A /* boton-azul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-azul.png"; sourceTree = "<group>"; };
+		AE0E2BD5180F4D000068F54A /* boton-blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-blanco.png"; sourceTree = "<group>"; };
+		AE0E2BD6180F4D000068F54A /* boton-rojo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-rojo.png"; sourceTree = "<group>"; };
 		AE7A626117DFCEEC00352992 /* statsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statsViewController.h; sourceTree = "<group>"; };
 		AE7A626217DFCEEC00352992 /* statsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = statsViewController.m; sourceTree = "<group>"; };
 		AE83136917DFC64600715A0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AE83136B17DFC65200715A0B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		AE95D8E617DFBAE0006443F8 /* pantalla-inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pantalla-inicio.png"; sourceTree = "<group>"; };
 		AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pantalla-score-card.png"; sourceTree = "<group>"; };
 		AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pelotagolf.jpg; sourceTree = "<group>"; };
 		AE95D8E917DFBAE0006443F8 /* score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score-card.png"; sourceTree = "<group>"; };
@@ -227,8 +219,6 @@
 				2DBF71B0180A7744008AC236 /* campos.plist */,
 				AE83136B17DFC65200715A0B /* icon@2x.png */,
 				AE83136917DFC64600715A0B /* icon.png */,
-				AE52D39217D7A38400AE9977 /* Default-568h@2x.png */,
-				AE52D39017D7A37800AE9977 /* Default@2x.png */,
 				28AEEB4F17C4CA26006EDE3E /* ScoreCard */,
 				28AEEB7317C4CA26006EDE3E /* ScoreCardTests */,
 				28AEEB4817C4CA26006EDE3E /* Frameworks */,
@@ -279,32 +269,10 @@
 		28AEEB5017C4CA26006EDE3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE04515F17E7B5F60005EF0D /* elegirPar3.png */,
-				AE04516017E7B5F60005EF0D /* elegirPar4.png */,
-				AE04516117E7B5F60005EF0D /* elegirPar5.png */,
-				AE04515B17E7AAF90005EF0D /* botonVolver.png */,
-				AEE9BFBB17E7316A00CA6E7E /* golpemas.png */,
-				AEE9BFBC17E7316A00CA6E7E /* golpemenos.png */,
-				AEE9BFB717E7272400CA6E7E /* dieciochoHoyos.png */,
-				AEE9BFB817E7272400CA6E7E /* nueveHoyos.png */,
-				AEE9BFB517E6FC5700CA6E7E /* volver.png */,
-				AEE9BFB317E6F9C100CA6E7E /* play.png */,
-				AE95D8E617DFBAE0006443F8 /* pantalla-inicio.png */,
-				AEE9BFB117E6F8CF00CA6E7E /* stats.png */,
-				AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */,
-				AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */,
-				AE95D8E917DFBAE0006443F8 /* score-card.png */,
-				AEBCBE7C17DFC141009804D4 /* Números de las banderas */,
-				AEBCBE7E17DFC18A009804D4 /* Botones de la pantalla */,
-				AEBCBE7D17DFC164009804D4 /* Número de golpes */,
-				AEFE845E17DA741B004B5E8F /* fondo.jpg */,
 				28AEEB5117C4CA26006EDE3E /* ScoreCard-Info.plist */,
 				28AEEB5217C4CA26006EDE3E /* InfoPlist.strings */,
 				28AEEB5517C4CA26006EDE3E /* main.m */,
 				28AEEB5717C4CA26006EDE3E /* ScoreCard-Prefix.pch */,
-				28AEEB5B17C4CA26006EDE3E /* Default.png */,
-				28AEEB5D17C4CA26006EDE3E /* Default@2x.png */,
-				28AEEB5F17C4CA26006EDE3E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -341,10 +309,10 @@
 		28AEEB8B17C4CBD1006EDE3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AEBCBE7C17DFC141009804D4 /* Números de las banderas */,
+				AEBCBE7E17DFC18A009804D4 /* Botones de la pantalla */,
+				AEBCBE7D17DFC164009804D4 /* Número de golpes */,
 				28AEEB9417C52770006EDE3E /* score-card.jpg */,
-				28AEEB9017C526C7006EDE3E /* BOLA2.jpg */,
-				28AEEB9117C526C7006EDE3E /* BOLAHOYO.jpg */,
-				28AEEB8817C4CBB6006EDE3E /* IMG_0336.JPG */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -439,6 +407,26 @@
 		AEBCBE7E17DFC18A009804D4 /* Botones de la pantalla */ = {
 			isa = PBXGroup;
 			children = (
+				AE0E2BD3180F4D000068F54A /* boton-amarillo.png */,
+				AE0E2BD4180F4D000068F54A /* boton-azul.png */,
+				AE0E2BD5180F4D000068F54A /* boton-blanco.png */,
+				AE0E2BD6180F4D000068F54A /* boton-rojo.png */,
+				AE0E2BD1180F4C9E0068F54A /* pantalla-inicio.png */,
+				AE04515F17E7B5F60005EF0D /* elegirPar3.png */,
+				AE04516017E7B5F60005EF0D /* elegirPar4.png */,
+				AE04516117E7B5F60005EF0D /* elegirPar5.png */,
+				AE04515B17E7AAF90005EF0D /* botonVolver.png */,
+				AEE9BFBB17E7316A00CA6E7E /* golpemas.png */,
+				AEE9BFBC17E7316A00CA6E7E /* golpemenos.png */,
+				AEE9BFB717E7272400CA6E7E /* dieciochoHoyos.png */,
+				AEE9BFB817E7272400CA6E7E /* nueveHoyos.png */,
+				AEE9BFB517E6FC5700CA6E7E /* volver.png */,
+				AEE9BFB317E6F9C100CA6E7E /* play.png */,
+				AEE9BFB117E6F8CF00CA6E7E /* stats.png */,
+				AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */,
+				AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */,
+				AE95D8E917DFBAE0006443F8 /* score-card.png */,
+				AEFE845E17DA741B004B5E8F /* fondo.jpg */,
 				AEE0607C17DE6848008B8B9D /* ladodcho.png */,
 				AEE0607D17DE6848008B8B9D /* ladoizdo.png */,
 				AEE0608717DE6848008B8B9D /* bolablanca.png */,
@@ -531,16 +519,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AEEB5417C4CA26006EDE3E /* InfoPlist.strings in Resources */,
-				28AEEB5C17C4CA26006EDE3E /* Default.png in Resources */,
-				28AEEB5E17C4CA26006EDE3E /* Default@2x.png in Resources */,
-				28AEEB6017C4CA26006EDE3E /* Default-568h@2x.png in Resources */,
 				28AEEB6317C4CA26006EDE3E /* MainStoryboard.storyboard in Resources */,
-				28AEEB8917C4CBB6006EDE3E /* IMG_0336.JPG in Resources */,
-				28AEEB9217C526C7006EDE3E /* BOLA2.jpg in Resources */,
-				28AEEB9317C526C7006EDE3E /* BOLAHOYO.jpg in Resources */,
 				28AEEB9517C52770006EDE3E /* score-card.jpg in Resources */,
-				AE52D39117D7A37800AE9977 /* Default@2x.png in Resources */,
-				AE52D39317D7A38400AE9977 /* Default-568h@2x.png in Resources */,
 				AEFE845F17DA741B004B5E8F /* fondo.jpg in Resources */,
 				2DBF71B3180A777E008AC236 /* golf.plist in Resources */,
 				AEFE846317DA74FA004B5E8F /* 18.png in Resources */,
@@ -549,6 +529,7 @@
 				AEFE84C617DB6AEE004B5E8F /* 3.png in Resources */,
 				AEFE84C717DB6AEE004B5E8F /* 4.png in Resources */,
 				AEFE84C817DB6AEE004B5E8F /* 5.png in Resources */,
+				AE0E2BD2180F4C9E0068F54A /* pantalla-inicio.png in Resources */,
 				AEFE84C917DB6AEE004B5E8F /* 6.png in Resources */,
 				AEFE84CA17DB6AEE004B5E8F /* 7.png in Resources */,
 				AEFE84CB17DB6AEE004B5E8F /* 8.png in Resources */,
@@ -562,7 +543,9 @@
 				AEFE84D217DB6AEE004B5E8F /* 15.png in Resources */,
 				AEFE84D317DB6AEE004B5E8F /* 16.png in Resources */,
 				AEFE84D417DB6AEE004B5E8F /* 17.png in Resources */,
+				AE0E2BD9180F4D000068F54A /* boton-blanco.png in Resources */,
 				AEE0608B17DE6849008B8B9D /* ladodcho.png in Resources */,
+				AE0E2BD7180F4D000068F54A /* boton-amarillo.png in Resources */,
 				AEE0608C17DE6849008B8B9D /* ladoizdo.png in Resources */,
 				AEE0608D17DE6849008B8B9D /* golpe9.png in Resources */,
 				AEE0608E17DE6849008B8B9D /* golpe8.png in Resources */,
@@ -572,12 +555,12 @@
 				AEE0609217DE6849008B8B9D /* golpe4.png in Resources */,
 				AEE0609317DE6849008B8B9D /* golpe3.png in Resources */,
 				AEE0609417DE6849008B8B9D /* golpe2.png in Resources */,
+				AE0E2BD8180F4D000068F54A /* boton-azul.png in Resources */,
 				AEE0609517DE6849008B8B9D /* golpe1.png in Resources */,
 				AEE0609617DE6849008B8B9D /* bolablanca.png in Resources */,
 				AEE0609717DE6849008B8B9D /* bolaverde.png in Resources */,
 				AEE0609817DE6849008B8B9D /* bolaroja.png in Resources */,
 				AEE0609917DE6849008B8B9D /* masomenos.png in Resources */,
-				AE95D8EA17DFBAE0006443F8 /* pantalla-inicio.png in Resources */,
 				AE95D8EB17DFBAE0006443F8 /* pantalla-score-card.png in Resources */,
 				AE95D8EC17DFBAE0006443F8 /* pelotagolf.jpg in Resources */,
 				AE95D8ED17DFBAE0006443F8 /* score-card.png in Resources */,
@@ -589,6 +572,7 @@
 				AEE9BFB917E7272400CA6E7E /* dieciochoHoyos.png in Resources */,
 				AEE9BFBA17E7272400CA6E7E /* nueveHoyos.png in Resources */,
 				AEE9BFBD17E7316A00CA6E7E /* golpemas.png in Resources */,
+				AE0E2BDA180F4D000068F54A /* boton-rojo.png in Resources */,
 				AEE9BFBE17E7316A00CA6E7E /* golpemenos.png in Resources */,
 				AE04515C17E7AAF90005EF0D /* botonVolver.png in Resources */,
 				AE04516217E7B5F60005EF0D /* elegirPar3.png in Resources */,
