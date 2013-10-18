@@ -274,7 +274,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKx-M4-YXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2171" y="703"/>
+            <point key="canvasLocation" x="1981" y="723"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="8KV-Os-clC">
@@ -289,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7L-YA-AIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="703"/>
+            <point key="canvasLocation" x="1407" y="815"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="X8g-5Z-T00">
@@ -474,12 +474,10 @@
     <resources>
         <image name="1.png" width="161" height="121"/>
         <image name="bolablanca.png" width="175" height="184"/>
-        <image name="bolablanca.png" width="175" height="184"/>
         <image name="boton-amarillo.png" width="500" height="493"/>
         <image name="boton-azul.png" width="500" height="508"/>
         <image name="boton-blanco.png" width="500" height="489"/>
         <image name="boton-rojo.png" width="500" height="500"/>
-        <image name="botonVolver.png" width="371" height="147"/>
         <image name="botonVolver.png" width="371" height="147"/>
         <image name="dieciochoHoyos.png" width="100" height="100"/>
         <image name="elegirPar3.png" width="29" height="37"/>
