@@ -216,7 +216,7 @@ NSMutableArray *hoyosArray;
 
     NSDictionary *mijugada = [[NSDictionary alloc]init];
     mijugada = [NSDictionary dictionaryWithObject: hoyoaux forKey:@"campo2"];
-    //NSString *errorDescription = nil;
+   
     NSError *error = [[NSError alloc]init];
     
     
