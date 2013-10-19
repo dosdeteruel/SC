@@ -493,13 +493,10 @@
     <resources>
         <image name="1.png" width="161" height="121"/>
         <image name="bolablanca.png" width="175" height="184"/>
-        <image name="bolablanca.png" width="175" height="184"/>
         <image name="boton-amarillo.png" width="500" height="493"/>
         <image name="boton-azul.png" width="500" height="508"/>
         <image name="boton-blanco.png" width="500" height="489"/>
         <image name="boton-rojo.png" width="500" height="500"/>
-        <image name="botonVolver.png" width="371" height="147"/>
-        <image name="botonVolver.png" width="371" height="147"/>
         <image name="botonVolver.png" width="371" height="147"/>
         <image name="dieciochoHoyos.png" width="100" height="100"/>
         <image name="elegirPar3.png" width="29" height="37"/>

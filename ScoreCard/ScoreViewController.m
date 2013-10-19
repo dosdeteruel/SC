@@ -184,6 +184,8 @@ NSMutableArray *hoyosArray;
     stHoyo = [stHoyo stringByAppendingFormat:@".png"];
     [self.numeroHoyo setImage:[UIImage imageNamed:stHoyo]];
     
+    // cuando llega al último hoyo se graba todo ¡¡¡¡¡
+    
     if (hoyo == numeroHoyosCampo)
     {
     
@@ -196,45 +198,39 @@ NSMutableArray *hoyosArray;
 
 
 - (void) grabarEnplist: (NSMutableArray *)mihoyo{
-// primero voy a pasar a stsring
+    // Primero voy a pasar a string la ruta del fichero a grabar
     NSMutableArray *hoyoaux = [[NSMutableArray alloc]init];
     NSDictionary *plistDictionary;
-     NSData *plistData;
+    NSData *plistData;
     NSString *ruta;
     NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    
     ruta= [pathArray stringByAppendingPathComponent:@"golf2.plist"];
     
-    
+    // Ahora recorro el Array para generar el Dictionary
     for (clasehoyo *elhoyo in mihoyo)
     {
-        
     plistDictionary = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects: @"Campo2", elhoyo.numerohoyo,elhoyo.golpes,nil] forKeys:[NSArray arrayWithObjects:@"campo",@"hoyo",@"golpes",nil]];
-        
-   // plistDictionary =
     
     [hoyoaux addObject:plistDictionary];
     }
 
     NSDictionary *mijugada = [[NSDictionary alloc]init];
-    
     mijugada = [NSDictionary dictionaryWithObject: hoyoaux forKey:@"campo2"];
+    //NSString *errorDescription = nil;
+    NSError *error = [[NSError alloc]init];
+    
+    //plistData = [NSPropertyListSerialization dataFromPropertyList:mijugada format:NSPropertyListXMLFormat_v1_0 errorDescription:&errorDescription];
+    
+    plistData = [NSPropertyListSerialization dataWithPropertyList:mijugada format:NSPropertyListXMLFormat_v1_0 options:0 error:&error];
 
 
-NSString *error;
+    if (plistData)
+    {
+        [plistData writeToFile:ruta atomically:YES];
+    }
 
 
-
-plistData = [NSPropertyListSerialization dataFromPropertyList:mijugada format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
-
-
-if (plistData)
-{
-    [plistData writeToFile:ruta atomically:YES];
-}
-
-
-[hoyoaux release];
+    [hoyoaux release];
 
 
  }
@@ -248,14 +244,9 @@ if (plistData)
     NSString *ruta;
     NSDictionary *plistDictionary;
     NSData *plistData;
-   NSMutableArray *hoyosAuxMutableArray=[[NSMutableArray alloc]init];
-    
- NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-
-   ruta= [pathArray stringByAppendingPathComponent:@"golf.plist"];
-
-    
-    
+    NSMutableArray *hoyosAuxMutableArray=[[NSMutableArray alloc]init];
+    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    ruta= [pathArray stringByAppendingPathComponent:@"golf.plist"];
     NSLog(@"%@", ruta);
     
       for (clasehoyo *elhoyo in miHoyo)
