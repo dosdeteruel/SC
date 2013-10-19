@@ -234,45 +234,6 @@ NSMutableArray *hoyosArray;
 
  }
 
-- (void) grabarAplist: (NSMutableArray *) miHoyo {
-// vuelta los datos del array a disco en plist
-    // tener en cuenta el nombre del campo
-    
-   // createEditableCopyOfIfNeeded;
-    
-    NSString *ruta;
-    NSDictionary *plistDictionary;
-    NSData *plistData;
-    NSMutableArray *hoyosAuxMutableArray=[[NSMutableArray alloc]init];
-    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    ruta= [pathArray stringByAppendingPathComponent:@"golf.plist"];
-    NSLog(@"%@", ruta);
-    
-      for (clasehoyo *elhoyo in miHoyo)
-    {
-   
-    plistDictionary = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects: [NSString stringWithFormat:@"%d",elhoyo.numerohoyo], [NSString stringWithFormat:@"%d", elhoyo.golpes],nil] forKeys:[NSArray arrayWithObjects:@"golpes",@"hoyo",nil]];
-   
-   [hoyosAuxMutableArray addObject:plistDictionary];
-    }
-        
-    
-    NSString *error;
-    
-    
-    
-    plistData = [NSPropertyListSerialization dataFromPropertyList:hoyosAuxMutableArray format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
-    
-    
-     if (plistData)
-          {
-                                [plistData writeToFile:ruta atomically:YES];
-          }
-                                
-         
-    [hoyosAuxMutableArray release];
-    
-}
 - (IBAction)cambiarHoyo:(id)sender {
     [self cambiardeHoyo:sender];
     
