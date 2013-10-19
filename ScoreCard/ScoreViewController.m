@@ -219,7 +219,6 @@ NSMutableArray *hoyosArray;
     //NSString *errorDescription = nil;
     NSError *error = [[NSError alloc]init];
     
-    //plistData = [NSPropertyListSerialization dataFromPropertyList:mijugada format:NSPropertyListXMLFormat_v1_0 errorDescription:&errorDescription];
     
     plistData = [NSPropertyListSerialization dataWithPropertyList:mijugada format:NSPropertyListXMLFormat_v1_0 options:0 error:&error];
 
