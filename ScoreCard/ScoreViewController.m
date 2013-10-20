@@ -230,7 +230,9 @@ NSMutableArray *hoyosArray;
 
 
     [hoyoaux release];
-
+    [plistDictionary release];
+    [plistData release];
+    
 
  }
 
