@@ -12,8 +12,8 @@
 
 @synthesize numerohoyo;
 @synthesize golpes;
-@synthesize maxgolpes;
-@synthesize mingolpes;
+//@synthesize maxgolpes;
+//@synthesize mingolpes;
 
 
 @end

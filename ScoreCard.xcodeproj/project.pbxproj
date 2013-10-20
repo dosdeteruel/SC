@@ -23,6 +23,8 @@
 		28AEEB9517C52770006EDE3E /* score-card.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28AEEB9417C52770006EDE3E /* score-card.jpg */; };
 		2D0757F417F49D6F00117857 /* campoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0757F317F49D6F00117857 /* campoTableViewController.m */; };
 		2D12350417D640F700AA7989 /* PortadaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D12350317D640F700AA7989 /* PortadaViewController.m */; };
+		2D8992371813AA1300889349 /* campo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8992361813AA1300889349 /* campo.m */; };
+		2D89923B1813ABDC00889349 /* hoyocampo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D89923A1813ABDC00889349 /* hoyocampo.m */; };
 		2DB4311617E9F362004384C8 /* clasehoyo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4311517E9F362004384C8 /* clasehoyo.m */; };
 		2DBF71B1180A7744008AC236 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF71B0180A7744008AC236 /* campos.plist */; };
 		2DBF71B3180A777E008AC236 /* golf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF71B2180A777E008AC236 /* golf.plist */; };
@@ -123,6 +125,10 @@
 		2D12350017D6383500AA7989 /* score-card.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "score-card.jpg"; sourceTree = "<group>"; };
 		2D12350217D640F700AA7989 /* PortadaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortadaViewController.h; sourceTree = "<group>"; };
 		2D12350317D640F700AA7989 /* PortadaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortadaViewController.m; sourceTree = "<group>"; };
+		2D8992351813AA1300889349 /* campo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = campo.h; sourceTree = "<group>"; };
+		2D8992361813AA1300889349 /* campo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = campo.m; sourceTree = "<group>"; };
+		2D8992391813ABDC00889349 /* hoyocampo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hoyocampo.h; sourceTree = "<group>"; };
+		2D89923A1813ABDC00889349 /* hoyocampo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hoyocampo.m; sourceTree = "<group>"; };
 		2DB4311417E9F362004384C8 /* clasehoyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clasehoyo.h; sourceTree = "<group>"; };
 		2DB4311517E9F362004384C8 /* clasehoyo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clasehoyo.m; sourceTree = "<group>"; };
 		2DBF71B0180A7744008AC236 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
@@ -218,6 +224,7 @@
 		28AEEB3A17C4CA26006EDE3E = {
 			isa = PBXGroup;
 			children = (
+				2D8992381813AA1D00889349 /* clase campo */,
 				AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */,
 				2DBF71B0180A7744008AC236 /* campos.plist */,
 				AE83136B17DFC65200715A0B /* icon@2x.png */,
@@ -337,6 +344,25 @@
 			);
 			name = portada;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		2D8992381813AA1D00889349 /* clase campo */ = {
+			isa = PBXGroup;
+			children = (
+				2D8992351813AA1300889349 /* campo.h */,
+				2D8992361813AA1300889349 /* campo.m */,
+				2D89923C1813ABE200889349 /* clase hoyocampo */,
+			);
+			name = "clase campo";
+			sourceTree = "<group>";
+		};
+		2D89923C1813ABE200889349 /* clase hoyocampo */ = {
+			isa = PBXGroup;
+			children = (
+				2D8992391813ABDC00889349 /* hoyocampo.h */,
+				2D89923A1813ABDC00889349 /* hoyocampo.m */,
+			);
+			name = "clase hoyocampo";
 			sourceTree = "<group>";
 		};
 		2DB4311717E9F367004384C8 /* clase hoyo */ = {
@@ -616,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8992371813AA1300889349 /* campo.m in Sources */,
 				28AEEB5617C4CA26006EDE3E /* main.m in Sources */,
 				28AEEB5A17C4CA26006EDE3E /* AppDelegate.m in Sources */,
 				28AEEB8617C4CA4E006EDE3E /* ScoreViewController.m in Sources */,
@@ -625,6 +652,7 @@
 				AED6FA0A17E6572500F4F49F /* numeroDeHoyosViewController.m in Sources */,
 				2DB4311617E9F362004384C8 /* clasehoyo.m in Sources */,
 				2D0757F417F49D6F00117857 /* campoTableViewController.m in Sources */,
+				2D89923B1813ABDC00889349 /* hoyocampo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

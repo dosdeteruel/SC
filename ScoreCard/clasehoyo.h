@@ -13,12 +13,16 @@
 {
     NSNumber *numerohoyo;
     NSNumber *golpes;
+
+    
     
 }
 @property (nonatomic, retain) NSNumber *numerohoyo;
 @property (nonatomic,retain) NSNumber *golpes;
-@property (nonatomic,retain) NSNumber *maxgolpes;
-@property (nonatomic,retain) NSNumber *mingolpes;
+
+
+
+
 
 
 
