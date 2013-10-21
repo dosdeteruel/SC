@@ -31,7 +31,7 @@ int golpesTotales;
 
  //if ([defaults objectForKey:@"jugarcampo"] != nil)
 NSMutableArray *hoyosArray;
-
+NSString *nombredelcampo;
 
 //=[[NSMutableArray alloc] init];
 
@@ -59,8 +59,7 @@ NSMutableArray *hoyosArray;
     hoyosArray=[NSMutableArray new];
     
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    
-    NSString *nombredelcampo= [defaults stringForKey:@"jugarcampo"];
+    nombredelcampo= [defaults stringForKey:@"jugarcampo"];
     
 //aqui carga los hoyos y los datos
     hoyo=1;
@@ -101,27 +100,6 @@ NSMutableArray *hoyosArray;
 #pragma mark funciones directorios
 
 
-- (void)createEditableCopyOfIfNeeded
-{
-    // First, test for existence.
-    BOOL success;
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSError *error;
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *writablePath = [documentsDirectory stringByAppendingPathComponent:@"golf.plist"];
-    success = [fileManager fileExistsAtPath:writablePath];
-    
-    if (success)
-        return;
-    
-    // The writable file does not exist, so copy from the bundle to the appropriate location.
-    NSString *defaultPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"golf.plist"];
-    success = [fileManager copyItemAtPath:defaultPath toPath:writablePath error:&error];
-    if (!success)
-        NSAssert1(0, @"Failed to create writable file with message '%@'.", [error localizedDescription]);
-}
 
 
 #pragma mark funciones
@@ -209,7 +187,7 @@ NSMutableArray *hoyosArray;
     // Ahora recorro el Array para generar el Dictionary
     for (clasehoyo *elhoyo in mihoyo)
     {
-    plistDictionary = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects: @"Campo2", elhoyo.numerohoyo,elhoyo.golpes,nil] forKeys:[NSArray arrayWithObjects:@"campo",@"hoyo",@"golpes",nil]];
+    plistDictionary = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects: nombredelcampo, elhoyo.numerohoyo,elhoyo.golpes,nil] forKeys:[NSArray arrayWithObjects:@"campo",@"hoyo",@"golpes",nil]];
     
     [hoyoaux addObject:plistDictionary];
     }

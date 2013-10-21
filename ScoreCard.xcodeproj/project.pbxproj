@@ -25,6 +25,7 @@
 		2D12350417D640F700AA7989 /* PortadaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D12350317D640F700AA7989 /* PortadaViewController.m */; };
 		2D8992371813AA1300889349 /* campo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8992361813AA1300889349 /* campo.m */; };
 		2D89923B1813ABDC00889349 /* hoyocampo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D89923A1813ABDC00889349 /* hoyocampo.m */; };
+		2D89923F1814267E00889349 /* nuevocampoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D89923E1814267E00889349 /* nuevocampoViewController.m */; };
 		2DB4311617E9F362004384C8 /* clasehoyo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4311517E9F362004384C8 /* clasehoyo.m */; };
 		2DBF71B1180A7744008AC236 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF71B0180A7744008AC236 /* campos.plist */; };
 		2DBF71B3180A777E008AC236 /* golf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF71B2180A777E008AC236 /* golf.plist */; };
@@ -129,6 +130,8 @@
 		2D8992361813AA1300889349 /* campo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = campo.m; sourceTree = "<group>"; };
 		2D8992391813ABDC00889349 /* hoyocampo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hoyocampo.h; sourceTree = "<group>"; };
 		2D89923A1813ABDC00889349 /* hoyocampo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hoyocampo.m; sourceTree = "<group>"; };
+		2D89923D1814267D00889349 /* nuevocampoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nuevocampoViewController.h; sourceTree = "<group>"; };
+		2D89923E1814267E00889349 /* nuevocampoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nuevocampoViewController.m; sourceTree = "<group>"; };
 		2DB4311417E9F362004384C8 /* clasehoyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clasehoyo.h; sourceTree = "<group>"; };
 		2DB4311517E9F362004384C8 /* clasehoyo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clasehoyo.m; sourceTree = "<group>"; };
 		2DBF71B0180A7744008AC236 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
@@ -224,6 +227,7 @@
 		28AEEB3A17C4CA26006EDE3E = {
 			isa = PBXGroup;
 			children = (
+				2D8992401814268300889349 /* nuevocampoviewController */,
 				2D8992381813AA1D00889349 /* clase campo */,
 				AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */,
 				2DBF71B0180A7744008AC236 /* campos.plist */,
@@ -363,6 +367,16 @@
 				2D89923A1813ABDC00889349 /* hoyocampo.m */,
 			);
 			name = "clase hoyocampo";
+			sourceTree = "<group>";
+		};
+		2D8992401814268300889349 /* nuevocampoviewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D89923D1814267D00889349 /* nuevocampoViewController.h */,
+				2D89923E1814267E00889349 /* nuevocampoViewController.m */,
+			);
+			name = nuevocampoviewController;
+			path = ScoreCard;
 			sourceTree = "<group>";
 		};
 		2DB4311717E9F367004384C8 /* clase hoyo */ = {
@@ -523,6 +537,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Maria Jose";
+				TargetAttributes = {
+					28AEEB4417C4CA26006EDE3E = {
+						DevelopmentTeam = XAET4E576S;
+					};
+				};
 			};
 			buildConfigurationList = 28AEEB3F17C4CA26006EDE3E /* Build configuration list for PBXProject "ScoreCard" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -651,6 +670,7 @@
 				AE7A626317DFCEEC00352992 /* statsViewController.m in Sources */,
 				AED6FA0A17E6572500F4F49F /* numeroDeHoyosViewController.m in Sources */,
 				2DB4311617E9F362004384C8 /* clasehoyo.m in Sources */,
+				2D89923F1814267E00889349 /* nuevocampoViewController.m in Sources */,
 				2D0757F417F49D6F00117857 /* campoTableViewController.m in Sources */,
 				2D89923B1813ABDC00889349 /* hoyocampo.m in Sources */,
 			);
@@ -753,6 +773,7 @@
 		28AEEB7F17C4CA26006EDE3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScoreCard/ScoreCard-Prefix.pch";
 				INFOPLIST_FILE = "ScoreCard/ScoreCard-Info.plist";
@@ -766,6 +787,7 @@
 		28AEEB8017C4CA26006EDE3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScoreCard/ScoreCard-Prefix.pch";
 				INFOPLIST_FILE = "ScoreCard/ScoreCard-Info.plist";

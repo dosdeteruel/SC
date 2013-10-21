@@ -10,15 +10,17 @@
 
 @implementation hoyocampo
 @synthesize lonblancohoyo;
-@synthesize  lonverdehoyo;
+@synthesize  lonamarillohoyo;
 @synthesize  lonazulhoyo;
 @synthesize lonrojohoyo;
 @synthesize maxblancohoyo;
 @synthesize  minblancohoyo;
-@synthesize  maxverdehoyo;
-@synthesize  minverdehoyo;
+@synthesize  maxamarillohoyo;
+@synthesize  minamarillohoyo;
 @synthesize maxazulhoyo;
 @synthesize minazulhoyo;
 @synthesize maxrojohoyo;
 @synthesize minrojohoyo;
+@synthesize numhoyo;
+
 @end

@@ -10,34 +10,36 @@
 
 @interface hoyocampo : NSObject
 {
-
-    NSNumber *lonblancohoyo;
-    NSNumber *lonverdehoyo;
-    NSNumber *lonazulhoyo;
-    NSNumber *lonrojohoyo;
-    NSNumber *maxblancohoyo;
-    NSNumber *minblancohoyo;
-    NSNumber *maxverdehoyo;
-    NSNumber *minverdehoyo;
-    NSNumber *maxazulhoyo;
-    NSNumber *minazulhoyo;
-    NSNumber *maxrojohoyo;
-    NSNumber *minrojohoyo;
+    NSString *numhoyo;
+    NSString *lonblancohoyo;
+    NSString *lonamarillohoyo;
+    NSString *lonazulhoyo;
+    NSString *lonrojohoyo;
+    NSString *maxblancohoyo;
+    NSString *minblancohoyo;
+    NSString *maxamarillohoyo;
+    NSString *minamarillohoyo;
+    NSString *maxazulhoyo;
+    NSString *minazulhoyo;
+    NSString *maxrojohoyo;
+    NSString *minrojohoyo;
 
 }
 
-@property (nonatomic, retain) NSNumber *lonblancohoyo;
-@property (nonatomic, retain) NSNumber *lonverdehoyo;
-@property (nonatomic, retain) NSNumber *lonazulhoyo;
-@property (nonatomic, retain) NSNumber *lonrojohoyo;
-@property (nonatomic, retain) NSNumber *maxblancohoyo;
-@property (nonatomic, retain) NSNumber *minblancohoyo;
-@property (nonatomic, retain) NSNumber *maxverdehoyo;
-@property (nonatomic, retain) NSNumber *minverdehoyo;
-@property (nonatomic, retain) NSNumber *maxazulhoyo;
-@property (nonatomic, retain) NSNumber *minazulhoyo;
-@property (nonatomic, retain) NSNumber *maxrojohoyo;
-@property (nonatomic, retain) NSNumber *minrojohoyo;
+@property (nonatomic, retain) NSString *lonblancohoyo;
+@property (nonatomic, retain) NSString *lonamarillohoyo;
+@property (nonatomic, retain) NSString *lonazulhoyo;
+@property (nonatomic, retain) NSString *lonrojohoyo;
+@property (nonatomic, retain) NSString *maxblancohoyo;
+@property (nonatomic, retain) NSString *minblancohoyo;
+@property (nonatomic, retain) NSString *maxamarillohoyo;
+@property (nonatomic, retain) NSString *minamarillohoyo;
+@property (nonatomic, retain) NSString *maxazulhoyo;
+@property (nonatomic, retain) NSString *minazulhoyo;
+@property (nonatomic, retain) NSString *maxrojohoyo;
+@property (nonatomic, retain) NSString *minrojohoyo;
+@property (nonatomic, retain) NSString *numhoyo;
+
 
 
 
