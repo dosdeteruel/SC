@@ -328,6 +328,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="Bax-xe-oDj" eventType="editingDidEnd" id="0nW-0o-2Qe"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-W1-MYw">
                                 <rect key="frame" x="108" y="244" width="61" height="30"/>
@@ -335,6 +338,9 @@
                                 <color key="backgroundColor" red="0.9647059440612793" green="1" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="Bax-xe-oDj" eventType="editingDidEnd" id="N1f-0w-pP9"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kGD-fO-xla">
                                 <rect key="frame" x="177" y="245" width="63" height="30"/>
@@ -342,6 +348,9 @@
                                 <color key="backgroundColor" red="0.098039224743843079" green="0.7137255072593689" blue="0.9490196704864502" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="Bax-xe-oDj" eventType="editingDidEnd" id="lPr-6B-uLt"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1c6-ap-zcm">
                                 <rect key="frame" x="241" y="245" width="68" height="30"/>
@@ -349,6 +358,9 @@
                                 <color key="backgroundColor" red="0.9960784912109375" green="0.031372550874948502" blue="0.0078431377187371254" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="Bax-xe-oDj" eventType="editingDidEnd" id="5rB-Vw-Kmy"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Metros" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="80" translatesAutoresizingMaskIntoConstraints="NO" id="qTP-M1-I2y">
                                 <rect key="frame" x="129" y="179" width="80" height="21"/>
