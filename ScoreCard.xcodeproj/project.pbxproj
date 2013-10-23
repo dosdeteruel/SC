@@ -38,14 +38,14 @@
 		AE0E2BD8180F4D000068F54A /* boton-azul.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD4180F4D000068F54A /* boton-azul.png */; };
 		AE0E2BD9180F4D000068F54A /* boton-blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD5180F4D000068F54A /* boton-blanco.png */; };
 		AE0E2BDA180F4D000068F54A /* boton-rojo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0E2BD6180F4D000068F54A /* boton-rojo.png */; };
+		AE36B9BF1815E69A000FAA29 /* flechadcha.png in Resources */ = {isa = PBXBuildFile; fileRef = AE36B9BD1815E69A000FAA29 /* flechadcha.png */; };
+		AE36B9C01815E69A000FAA29 /* flechaizda.png in Resources */ = {isa = PBXBuildFile; fileRef = AE36B9BE1815E69A000FAA29 /* flechaizda.png */; };
 		AE40F2F01811CD1D00A4450C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */; };
-		AE7A626317DFCEEC00352992 /* statsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7A626217DFCEEC00352992 /* statsViewController.m */; };
 		AE83136A17DFC64600715A0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136917DFC64600715A0B /* icon.png */; };
 		AE83136C17DFC65200715A0B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136B17DFC65200715A0B /* icon@2x.png */; };
 		AE95D8EB17DFBAE0006443F8 /* pantalla-score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */; };
 		AE95D8EC17DFBAE0006443F8 /* pelotagolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */; };
 		AE95D8ED17DFBAE0006443F8 /* score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E917DFBAE0006443F8 /* score-card.png */; };
-		AEBCBE7617DFC0DF009804D4 /* inicioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBCBE7517DFC0DF009804D4 /* inicioViewController.m */; };
 		AED6FA0A17E6572500F4F49F /* numeroDeHoyosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED6FA0917E6572500F4F49F /* numeroDeHoyosViewController.m */; };
 		AEE0608B17DE6849008B8B9D /* ladodcho.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607C17DE6848008B8B9D /* ladodcho.png */; };
 		AEE0608C17DE6849008B8B9D /* ladoizdo.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607D17DE6848008B8B9D /* ladoizdo.png */; };
@@ -145,16 +145,14 @@
 		AE0E2BD4180F4D000068F54A /* boton-azul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-azul.png"; sourceTree = "<group>"; };
 		AE0E2BD5180F4D000068F54A /* boton-blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-blanco.png"; sourceTree = "<group>"; };
 		AE0E2BD6180F4D000068F54A /* boton-rojo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-rojo.png"; sourceTree = "<group>"; };
+		AE36B9BD1815E69A000FAA29 /* flechadcha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flechadcha.png; sourceTree = "<group>"; };
+		AE36B9BE1815E69A000FAA29 /* flechaizda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flechaizda.png; sourceTree = "<group>"; };
 		AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AE7A626117DFCEEC00352992 /* statsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statsViewController.h; sourceTree = "<group>"; };
-		AE7A626217DFCEEC00352992 /* statsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = statsViewController.m; sourceTree = "<group>"; };
 		AE83136917DFC64600715A0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AE83136B17DFC65200715A0B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pantalla-score-card.png"; sourceTree = "<group>"; };
 		AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pelotagolf.jpg; sourceTree = "<group>"; };
 		AE95D8E917DFBAE0006443F8 /* score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score-card.png"; sourceTree = "<group>"; };
-		AEBCBE7417DFC0DF009804D4 /* inicioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inicioViewController.h; sourceTree = "<group>"; };
-		AEBCBE7517DFC0DF009804D4 /* inicioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inicioViewController.m; sourceTree = "<group>"; };
 		AED6FA0817E6572500F4F49F /* numeroDeHoyosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numeroDeHoyosViewController.h; sourceTree = "<group>"; };
 		AED6FA0917E6572500F4F49F /* numeroDeHoyosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numeroDeHoyosViewController.m; sourceTree = "<group>"; };
 		AEE0607C17DE6848008B8B9D /* ladodcho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ladodcho.png; sourceTree = "<group>"; };
@@ -227,8 +225,6 @@
 		28AEEB3A17C4CA26006EDE3E = {
 			isa = PBXGroup;
 			children = (
-				2D8992401814268300889349 /* nuevocampoviewController */,
-				2D8992381813AA1D00889349 /* clase campo */,
 				AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */,
 				2DBF71B0180A7744008AC236 /* campos.plist */,
 				AE83136B17DFC65200715A0B /* icon@2x.png */,
@@ -269,13 +265,14 @@
 				28AEEB5917C4CA26006EDE3E /* AppDelegate.m */,
 				28AEEB6117C4CA26006EDE3E /* MainStoryboard.storyboard */,
 				2D12350517D6410000AA7989 /* portada */,
-				AEBCBE7717DFC0E5009804D4 /* inicioViewController */,
+				2D0757F517F49D7400117857 /* campoTableViewController */,
+				2D8992401814268300889349 /* nuevocampoviewController */,
 				AED6FA0B17E6572900F4F49F /* numeroDeHoyosViewController */,
 				28AEEB8717C4CA5D006EDE3E /* score */,
-				AE7A626417DFCEF000352992 /* statsViewController */,
 				28AEEB5017C4CA26006EDE3E /* Supporting Files */,
+				2D89923C1813ABE200889349 /* clase hoyocampo */,
+				2D8992381813AA1D00889349 /* clase campo */,
 				2DB4311717E9F367004384C8 /* clase hoyo */,
-				2D0757F517F49D7400117857 /* campoTableViewController */,
 			);
 			path = ScoreCard;
 			sourceTree = "<group>";
@@ -355,9 +352,9 @@
 			children = (
 				2D8992351813AA1300889349 /* campo.h */,
 				2D8992361813AA1300889349 /* campo.m */,
-				2D89923C1813ABE200889349 /* clase hoyocampo */,
 			);
 			name = "clase campo";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		2D89923C1813ABE200889349 /* clase hoyocampo */ = {
@@ -367,6 +364,7 @@
 				2D89923A1813ABDC00889349 /* hoyocampo.m */,
 			);
 			name = "clase hoyocampo";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		2D8992401814268300889349 /* nuevocampoviewController */ = {
@@ -376,7 +374,6 @@
 				2D89923E1814267E00889349 /* nuevocampoViewController.m */,
 			);
 			name = nuevocampoviewController;
-			path = ScoreCard;
 			sourceTree = "<group>";
 		};
 		2DB4311717E9F367004384C8 /* clase hoyo */ = {
@@ -386,24 +383,6 @@
 				2DB4311517E9F362004384C8 /* clasehoyo.m */,
 			);
 			name = "clase hoyo";
-			sourceTree = "<group>";
-		};
-		AE7A626417DFCEF000352992 /* statsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				AE7A626117DFCEEC00352992 /* statsViewController.h */,
-				AE7A626217DFCEEC00352992 /* statsViewController.m */,
-			);
-			name = statsViewController;
-			sourceTree = "<group>";
-		};
-		AEBCBE7717DFC0E5009804D4 /* inicioViewController */ = {
-			isa = PBXGroup;
-			children = (
-				AEBCBE7417DFC0DF009804D4 /* inicioViewController.h */,
-				AEBCBE7517DFC0DF009804D4 /* inicioViewController.m */,
-			);
-			name = inicioViewController;
 			sourceTree = "<group>";
 		};
 		AEBCBE7C17DFC141009804D4 /* Números de las banderas */ = {
@@ -450,6 +429,8 @@
 		AEBCBE7E17DFC18A009804D4 /* Botones de la pantalla */ = {
 			isa = PBXGroup;
 			children = (
+				AE36B9BD1815E69A000FAA29 /* flechadcha.png */,
+				AE36B9BE1815E69A000FAA29 /* flechaizda.png */,
 				AE0E2BD3180F4D000068F54A /* boton-amarillo.png */,
 				AE0E2BD4180F4D000068F54A /* boton-azul.png */,
 				AE0E2BD5180F4D000068F54A /* boton-blanco.png */,
@@ -602,6 +583,7 @@
 				AEE0609117DE6849008B8B9D /* golpe5.png in Resources */,
 				AE40F2F01811CD1D00A4450C /* Default-568h@2x.png in Resources */,
 				AEE0609217DE6849008B8B9D /* golpe4.png in Resources */,
+				AE36B9C01815E69A000FAA29 /* flechaizda.png in Resources */,
 				AEE0609317DE6849008B8B9D /* golpe3.png in Resources */,
 				AEE0609417DE6849008B8B9D /* golpe2.png in Resources */,
 				AE0E2BD8180F4D000068F54A /* boton-azul.png in Resources */,
@@ -616,6 +598,7 @@
 				AE83136A17DFC64600715A0B /* icon.png in Resources */,
 				AE83136C17DFC65200715A0B /* icon@2x.png in Resources */,
 				AEE9BFB217E6F8CF00CA6E7E /* stats.png in Resources */,
+				AE36B9BF1815E69A000FAA29 /* flechadcha.png in Resources */,
 				AEE9BFB417E6F9C100CA6E7E /* play.png in Resources */,
 				AEE9BFB617E6FC5700CA6E7E /* volver.png in Resources */,
 				AEE9BFB917E7272400CA6E7E /* dieciochoHoyos.png in Resources */,
@@ -666,8 +649,6 @@
 				28AEEB5A17C4CA26006EDE3E /* AppDelegate.m in Sources */,
 				28AEEB8617C4CA4E006EDE3E /* ScoreViewController.m in Sources */,
 				2D12350417D640F700AA7989 /* PortadaViewController.m in Sources */,
-				AEBCBE7617DFC0DF009804D4 /* inicioViewController.m in Sources */,
-				AE7A626317DFCEEC00352992 /* statsViewController.m in Sources */,
 				AED6FA0A17E6572500F4F49F /* numeroDeHoyosViewController.m in Sources */,
 				2DB4311617E9F362004384C8 /* clasehoyo.m in Sources */,
 				2D89923F1814267E00889349 /* nuevocampoViewController.m in Sources */,
