@@ -72,6 +72,7 @@ int hoyoscampo;
     NSDictionary *micampo = [[NSDictionary alloc]init];
     micampo = [NSDictionary dictionaryWithObject: campoaux forKey:nombre.text];
     
+    
     NSError *error = [[NSError alloc]init];
     
     
