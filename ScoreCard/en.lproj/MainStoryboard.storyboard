@@ -31,7 +31,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NhD-5e-F95" kind="push" identifier="Cell" id="PVR-Df-xMZ"/>
+                                    <segue destination="vo8-EO-8Xg" kind="push" identifier="Cell" id="PVR-Df-xMZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,11 +52,11 @@
                         <viewControllerLayoutGuide type="bottom" id="lUf-g0-4JN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TKq-9t-KcV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="scaleToFill" fixedFrame="YES" image="pantalla-inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKB-BF-zGn">
-                                <rect key="frame" x="-1" y="-36" width="321" height="540"/>
+                                <rect key="frame" x="-1" y="-36" width="321" height="496"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doe-IT-xrV">
@@ -168,7 +168,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSg-uG-hvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="T5h-IL-68P" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1695" y="-18"/>
+            <point key="canvasLocation" x="2221" y="-18"/>
         </scene>
         <!--Nuevocampo View Controller-->
         <scene sceneID="mbL-wO-6fB">
@@ -179,7 +179,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Fc9-r7-Anx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qzV-ZD-RcK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.39999999999999997" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pantalla-inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-WV-Ft2">
@@ -343,7 +343,7 @@
             <objects>
                 <tableViewController id="NhD-5e-F95" customClass="campoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="g2H-0z-sNw">
-                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -376,7 +376,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKx-M4-YXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173" y="-10"/>
+            <point key="canvasLocation" x="1699" y="-10"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="X8g-5Z-T00">
@@ -537,7 +537,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="riT-TS-3Ci" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0SJ-Wn-zin" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2334" y="-18"/>
+            <point key="canvasLocation" x="2860" y="-18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Ge-kW-JUj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vo8-EO-8Xg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9Ta-5S-163"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ylc-5h-RpX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NhD-5e-F95" kind="relationship" relationship="rootViewController" id="GaP-U1-SKK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTQ-DV-Ij2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173" y="-10"/>
         </scene>
     </scenes>
     <resources>
