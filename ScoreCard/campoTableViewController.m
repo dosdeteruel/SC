@@ -19,6 +19,10 @@
 
 @synthesize tbl;
 
+
+NSMutableArray *arraynombrecampos;
+  //  NSrray *nombresCamposarray = [[NSArray alloc] init];
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -33,10 +37,62 @@
     [super viewDidLoad];
 
     //cargar el array desde el plist
+    NSArray *arrayCamposAux= [[NSArray alloc] init];
+    
+
     
     NSString *fichero = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
-    arr = [[NSArray alloc] initWithContentsOfFile:fichero];
+   
+     NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: fichero] ;
+   
+ arrayCamposAux = [diccionariocampos allKeys];
+    
+    arraynombrecampos = [[NSMutableArray alloc] initWithArray:arrayCamposAux ];
+    
+//    arr = [[NSArray alloc] initWithContentsOfFile:fichero];
+    
+    
+    
+    
+  
+        //puedo sacar solo las zonas
+        // puedo saar los puntos de una zona
+        int i;
+        i=0;
+        
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
+  //      NSMutableArray *arraycampos =[[NSMutableArray alloc] init];
+//        NSMutableArray *arraynombrecampos =[[NSMutableArray alloc] init];
+        
+        
+        //Creamos un array con el contenido del fichero
+        
+  //      NSArray *arrayConDatos = [[NSArray alloc] initWithContentsOfFile:path];
+        
+ //       for (; i < arrayConDatos.count; i++)
+        {
+            
+ //           [arraycampos addObject: [arrayConDatos objectAtIndex:i]];
+            //  NSLog(@"elemento - %d en myArray: %@", i, element);
+ //           [arraynombrecampos addObject:[arraycampos objectAtIndex:2]];
+            
+        }
+        
+        
+ //   NSDictionary *micampo = [[NSDictionary alloc]init];
+//    micampo = [NSDictionary dictionaryWithObject: campoaux forKey:nombre.text];
+    
+    
+    
+    
+    
   }
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -55,7 +111,7 @@
 {
 
     // Return the number of rows in the section.
-    return [arr count];
+    return [arraynombrecampos count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,7 +125,7 @@
     }
     // Configure the cell...
     
-    cell.textLabel.text =[arr objectAtIndex:indexPath.row];
+    cell.textLabel.text =[arraynombrecampos objectAtIndex:indexPath.row];
     cell.detailTextLabel.text =@"Elige";
     cell.accessoryType =UITableViewCellAccessoryDetailDisclosureButton;
     
@@ -123,7 +179,7 @@
     
     int arrIndex =[indexPath indexAtPosition:[indexPath length]-1];
     
-    NSString *titulo=[arr objectAtIndex:arrIndex];
+    NSString *titulo=[arraynombrecampos objectAtIndex:arrIndex];
     
     defaults = [NSUserDefaults standardUserDefaults];
     
