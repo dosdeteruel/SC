@@ -7,6 +7,7 @@
 //
 
 #import "campoTableViewController.h"
+#import "campo.h"
 
 @interface campoTableViewController ()
 {
@@ -15,6 +16,8 @@
 @end
 
 @implementation campoTableViewController
+
+@synthesize tbl;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -45,8 +48,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
     return 1;
 }
 
@@ -124,7 +125,7 @@
     
     NSString *titulo=[arr objectAtIndex:arrIndex];
     
-  defaults = [NSUserDefaults standardUserDefaults];
+    defaults = [NSUserDefaults standardUserDefaults];
     
     [defaults setObject:titulo forKey:@"jugarcampo"] ;
     

@@ -7,7 +7,7 @@
 //
 
 #import "PortadaViewController.h"
-#import "inicioViewController.h"
+#import "campoTableViewController.h"
 
 @interface PortadaViewController ()
 
@@ -37,7 +37,7 @@
 }
 - (IBAction)cambiarPantalla {
 
-    inicioViewController *controller =[self.storyboard instantiateViewControllerWithIdentifier:@"inicioViewController"];
+    campoTableViewController *controller =[self.storyboard instantiateViewControllerWithIdentifier:@"campoTableViewController"];
     [self presentViewController:controller animated:YES completion:NULL];
     
     

@@ -125,6 +125,13 @@ int hoyoscampo;
     }
     
  }
+
+- (IBAction)guardarCampo:(UIStoryboardSegue *)segue{
+    
+}
+
+
+
 - (void)dealloc {
     [numhoyo release];
     [hoyoblanco release];
