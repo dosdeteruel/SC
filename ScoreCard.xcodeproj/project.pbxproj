@@ -27,7 +27,6 @@
 		2D89923B1813ABDC00889349 /* hoyocampo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D89923A1813ABDC00889349 /* hoyocampo.m */; };
 		2D89923F1814267E00889349 /* nuevocampoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D89923E1814267E00889349 /* nuevocampoViewController.m */; };
 		2DB4311617E9F362004384C8 /* clasehoyo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4311517E9F362004384C8 /* clasehoyo.m */; };
-		2DBF71B1180A7744008AC236 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF71B0180A7744008AC236 /* campos.plist */; };
 		2DBF71B3180A777E008AC236 /* golf.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF71B2180A777E008AC236 /* golf.plist */; };
 		AE04515C17E7AAF90005EF0D /* botonVolver.png in Resources */ = {isa = PBXBuildFile; fileRef = AE04515B17E7AAF90005EF0D /* botonVolver.png */; };
 		AE04516217E7B5F60005EF0D /* elegirPar3.png in Resources */ = {isa = PBXBuildFile; fileRef = AE04515F17E7B5F60005EF0D /* elegirPar3.png */; };
@@ -43,6 +42,7 @@
 		AE40F2F01811CD1D00A4450C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */; };
 		AE83136A17DFC64600715A0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136917DFC64600715A0B /* icon.png */; };
 		AE83136C17DFC65200715A0B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136B17DFC65200715A0B /* icon@2x.png */; };
+		AE85EA49181B266400D4B2C6 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE85EA48181B266400D4B2C6 /* campos.plist */; };
 		AE95D8EB17DFBAE0006443F8 /* pantalla-score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */; };
 		AE95D8EC17DFBAE0006443F8 /* pelotagolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */; };
 		AE95D8ED17DFBAE0006443F8 /* score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E917DFBAE0006443F8 /* score-card.png */; };
@@ -134,7 +134,6 @@
 		2D89923E1814267E00889349 /* nuevocampoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nuevocampoViewController.m; sourceTree = "<group>"; };
 		2DB4311417E9F362004384C8 /* clasehoyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clasehoyo.h; sourceTree = "<group>"; };
 		2DB4311517E9F362004384C8 /* clasehoyo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clasehoyo.m; sourceTree = "<group>"; };
-		2DBF71B0180A7744008AC236 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
 		2DBF71B2180A777E008AC236 /* golf.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = golf.plist; sourceTree = "<group>"; };
 		AE04515B17E7AAF90005EF0D /* botonVolver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botonVolver.png; sourceTree = "<group>"; };
 		AE04515F17E7B5F60005EF0D /* elegirPar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elegirPar3.png; sourceTree = "<group>"; };
@@ -150,6 +149,7 @@
 		AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AE83136917DFC64600715A0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AE83136B17DFC65200715A0B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		AE85EA48181B266400D4B2C6 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
 		AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pantalla-score-card.png"; sourceTree = "<group>"; };
 		AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pelotagolf.jpg; sourceTree = "<group>"; };
 		AE95D8E917DFBAE0006443F8 /* score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score-card.png"; sourceTree = "<group>"; };
@@ -225,8 +225,8 @@
 		28AEEB3A17C4CA26006EDE3E = {
 			isa = PBXGroup;
 			children = (
+				AE85EA48181B266400D4B2C6 /* campos.plist */,
 				AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */,
-				2DBF71B0180A7744008AC236 /* campos.plist */,
 				AE83136B17DFC65200715A0B /* icon@2x.png */,
 				AE83136917DFC64600715A0B /* icon.png */,
 				28AEEB4F17C4CA26006EDE3E /* ScoreCard */,
@@ -563,13 +563,13 @@
 				AEFE84CA17DB6AEE004B5E8F /* 7.png in Resources */,
 				AEFE84CB17DB6AEE004B5E8F /* 8.png in Resources */,
 				AEFE84CC17DB6AEE004B5E8F /* 9.png in Resources */,
-				2DBF71B1180A7744008AC236 /* campos.plist in Resources */,
 				AEFE84CD17DB6AEE004B5E8F /* 10.png in Resources */,
 				AEFE84CE17DB6AEE004B5E8F /* 11.png in Resources */,
 				AEFE84CF17DB6AEE004B5E8F /* 12.png in Resources */,
 				AEFE84D017DB6AEE004B5E8F /* 13.png in Resources */,
 				AEFE84D117DB6AEE004B5E8F /* 14.png in Resources */,
 				AEFE84D217DB6AEE004B5E8F /* 15.png in Resources */,
+				AE85EA49181B266400D4B2C6 /* campos.plist in Resources */,
 				AEFE84D317DB6AEE004B5E8F /* 16.png in Resources */,
 				AEFE84D417DB6AEE004B5E8F /* 17.png in Resources */,
 				AE0E2BD9180F4D000068F54A /* boton-blanco.png in Resources */,

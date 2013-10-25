@@ -23,10 +23,11 @@
 
 @property (retain, nonatomic) IBOutlet UILabel *numhoyo;
 
-- (IBAction)guardarCampo:(UIStoryboardSegue *)segue;
+- (IBAction) guardarCampo:(UIStoryboardSegue *)segue;
+
 - (IBAction) guardarHoyoCampo;
 
--(IBAction) textFieldDoneEditing : (id) sender;
+- (IBAction) textFieldDoneEditing : (id) sender;
 
 
 @end

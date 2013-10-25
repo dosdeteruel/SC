@@ -20,6 +20,7 @@
 @implementation ScoreViewController
 
 @synthesize numeroHoyosCampo;
+@synthesize color;
 
 NSInteger hoyo;
 int par;
