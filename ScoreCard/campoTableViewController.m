@@ -51,10 +51,8 @@ NSMutableArray *arraynombrecampos;
     
 //    arr = [[NSArray alloc] initWithContentsOfFile:fichero];
     
+         //arrayhoyos
     
-    
-    
-  
         //puedo sacar solo las zonas
         // puedo saar los puntos de una zona
         int i;

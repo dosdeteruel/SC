@@ -13,12 +13,12 @@
                         <viewControllerLayoutGuide type="top" id="bmM-NO-XSI"/>
                         <viewControllerLayoutGuide type="bottom" id="mqo-TD-dhj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mfM-VW-cP7" customClass="Portada">
+                    <view key="view" contentMode="scaleToFill" id="mfM-VW-cP7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="score-card.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fwi-kx-9cy">
-                                <rect key="frame" x="0.0" y="10" width="320" height="548"/>
+                                <rect key="frame" x="-1" y="20" width="320" height="548"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVr-yH-uO6">
                                 <rect key="frame" x="86" y="228" width="147" height="147"/>
@@ -31,7 +31,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vo8-EO-8Xg" kind="push" identifier="Cell" id="PVR-Df-xMZ"/>
+                                    <segue destination="NhD-5e-F95" kind="modal" identifier="Cell" id="kBg-MN-Yhu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I80-uI-ope" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="227" y="-10"/>
+            <point key="canvasLocation" x="1155" y="-10"/>
         </scene>
         <!--Numero De Hoyos View Controller-->
         <scene sceneID="FPY-dI-1hs">
@@ -52,11 +52,11 @@
                         <viewControllerLayoutGuide type="bottom" id="lUf-g0-4JN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TKq-9t-KcV">
-                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="scaleToFill" fixedFrame="YES" image="pantalla-inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKB-BF-zGn">
-                                <rect key="frame" x="-1" y="-36" width="321" height="496"/>
+                                <rect key="frame" x="-1" y="-36" width="321" height="540"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doe-IT-xrV">
@@ -179,7 +179,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Fc9-r7-Anx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qzV-ZD-RcK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.39999999999999997" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pantalla-inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-WV-Ft2">
@@ -343,7 +343,7 @@
             <objects>
                 <tableViewController id="NhD-5e-F95" customClass="campoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="g2H-0z-sNw">
-                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -539,33 +539,20 @@
             </objects>
             <point key="canvasLocation" x="2860" y="-18"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6Ge-kW-JUj">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vo8-EO-8Xg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="9Ta-5S-163"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ylc-5h-RpX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="NhD-5e-F95" kind="relationship" relationship="rootViewController" id="GaP-U1-SKK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aTQ-DV-Ij2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1173" y="-10"/>
-        </scene>
     </scenes>
     <resources>
         <image name="1.png" width="161" height="121"/>
         <image name="bolablanca.png" width="175" height="184"/>
+        <image name="bolablanca.png" width="175" height="184"/>
+        <image name="boton-amarillo.png" width="500" height="493"/>
         <image name="boton-amarillo.png" width="500" height="493"/>
         <image name="boton-azul.png" width="500" height="508"/>
+        <image name="boton-azul.png" width="500" height="508"/>
+        <image name="boton-blanco.png" width="500" height="489"/>
         <image name="boton-blanco.png" width="500" height="489"/>
         <image name="boton-rojo.png" width="500" height="500"/>
+        <image name="boton-rojo.png" width="500" height="500"/>
+        <image name="botonVolver.png" width="371" height="147"/>
         <image name="botonVolver.png" width="371" height="147"/>
         <image name="dieciochoHoyos.png" width="100" height="100"/>
         <image name="elegirPar3.png" width="29" height="37"/>
@@ -580,6 +567,7 @@
         <image name="ladodcho.png" width="133" height="1140"/>
         <image name="ladoizdo.png" width="133" height="1140"/>
         <image name="nueveHoyos.png" width="100" height="100"/>
+        <image name="pantalla-inicio.png" width="640" height="1136"/>
         <image name="pantalla-inicio.png" width="640" height="1136"/>
         <image name="score-card.jpg" width="640" height="1136"/>
     </resources>
