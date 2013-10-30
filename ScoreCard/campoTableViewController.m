@@ -8,7 +8,7 @@
 
 #import "campoTableViewController.h"
 #import "campo.h"
-
+#import "numeroDeHoyosViewController.h"
 @interface campoTableViewController ()
 {
     NSUserDefaults *defaults;
@@ -18,9 +18,11 @@
 @implementation campoTableViewController
 
 @synthesize tbl;
-
+NSUserDefaults *defaults;
 
 NSMutableArray *arraynombrecampos;
+
+
   //  NSrray *nombresCamposarray = [[NSArray alloc] init];
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -38,53 +40,30 @@ NSMutableArray *arraynombrecampos;
 
     //cargar el array desde el plist
     NSArray *arrayCamposAux= [[NSArray alloc] init];
+    NSString *ruta;
     
 
+
     
-    NSString *fichero = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
+ //   NSString *fichero = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
    
-     NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: fichero] ;
+    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    ruta= [pathArray stringByAppendingPathComponent:@"campos.plist"];
+    
+     NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
    
  arrayCamposAux = [diccionariocampos allKeys];
     
     arraynombrecampos = [[NSMutableArray alloc] initWithArray:arrayCamposAux ];
     
-//    arr = [[NSArray alloc] initWithContentsOfFile:fichero];
-    
-         //arrayhoyos
-    
-        //puedo sacar solo las zonas
-        // puedo saar los puntos de una zona
-        int i;
-        i=0;
-        
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
-  //      NSMutableArray *arraycampos =[[NSMutableArray alloc] init];
-//        NSMutableArray *arraynombrecampos =[[NSMutableArray alloc] init];
-        
-        
-        //Creamos un array con el contenido del fichero
-        
-  //      NSArray *arrayConDatos = [[NSArray alloc] initWithContentsOfFile:path];
-        
- //       for (; i < arrayConDatos.count; i++)
-        {
-            
- //           [arraycampos addObject: [arrayConDatos objectAtIndex:i]];
-            //  NSLog(@"elemento - %d en myArray: %@", i, element);
- //           [arraynombrecampos addObject:[arraycampos objectAtIndex:2]];
-            
-        }
-        
-        
- //   NSDictionary *micampo = [[NSDictionary alloc]init];
-//    micampo = [NSDictionary dictionaryWithObject: campoaux forKey:nombre.text];
+    NSString *nom= [arraynombrecampos objectAtIndex:0];
     
     
+    NSLog(@"%@", nom);
     
     
-    
-  }
+      }
 
 
 
@@ -182,17 +161,19 @@ NSMutableArray *arraynombrecampos;
     defaults = [NSUserDefaults standardUserDefaults];
     
     [defaults setObject:titulo forKey:@"jugarcampo"] ;
+    [defaults setObject:arraynombrecampos forKey:@"datoscampo"];
     
     [defaults synchronize];
     
-                                       // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    
+    numeroDeHoyosViewController *detailViewController = [[numeroDeHoyosViewController alloc] initWithNibName:@"" bundle:nil];
+    // ...
+    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    [detailViewController release];
+
+
 }
 
 @end
+

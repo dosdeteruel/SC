@@ -52,11 +52,11 @@
                         <viewControllerLayoutGuide type="bottom" id="lUf-g0-4JN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TKq-9t-KcV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="scaleToFill" fixedFrame="YES" image="pantalla-inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKB-BF-zGn">
-                                <rect key="frame" x="-1" y="-36" width="321" height="540"/>
+                                <rect key="frame" x="-1" y="-36" width="321" height="584"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doe-IT-xrV">
@@ -164,11 +164,14 @@
                         <color key="backgroundColor" red="0.66666668650000005" green="0.91764712329999998" blue="0.58823531870000001" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z22-1u-QER"/>
+                    <connections>
+                        <outlet property="botonAmarillo" destination="P7Y-j5-sBu" id="fOw-tT-ugp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSg-uG-hvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="T5h-IL-68P" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2221" y="-18"/>
+            <point key="canvasLocation" x="2277" y="-518"/>
         </scene>
         <!--Nuevocampo View Controller-->
         <scene sceneID="mbL-wO-6fB">
@@ -336,7 +339,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBF-jG-hyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hiJ-ke-m63" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1709" y="791"/>
+            <point key="canvasLocation" x="2489" y="1391"/>
         </scene>
         <!--Campo Table View Controller-->
         <scene sceneID="Ocn-uB-h8r">
@@ -355,7 +358,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="iQ7-76-3I8" kind="push" id="HNi-C7-LFN"/>
+                                    <segue destination="iQ7-76-3I8" kind="modal" id="HNi-C7-LFN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -537,7 +540,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="riT-TS-3Ci" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0SJ-Wn-zin" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2860" y="-18"/>
+            <point key="canvasLocation" x="3420" y="-242"/>
         </scene>
     </scenes>
     <resources>

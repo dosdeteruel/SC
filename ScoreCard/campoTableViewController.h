@@ -15,4 +15,8 @@ UITableView *tbl;
     
 }
 @property (nonatomic, retain) IBOutlet UITableView *tbl;
+
+
+
+
 @end

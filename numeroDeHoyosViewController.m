@@ -47,9 +47,25 @@
     ScoreViewController *scoreview = [segue destinationViewController];
     if ([segue.identifier isEqualToString:@"nueveHoyos"]) {
         scoreview.numeroHoyosCampo = 9;
+        
     } else if ([segue.identifier isEqualToString:@"dieciochoHoyos"]){
         scoreview.numeroHoyosCampo =18;
     }
 }
 
+
+- (IBAction) colorCampo:(UIButton *) sender
+{
+  //  NSString *nombre = sender.tag;
+  //  switch (nombre)
+    {
+ //    case "
+    }
+
+}
+
+- (void)dealloc {
+    [_botonAmarillo release];
+    [super dealloc];
+}
 @end

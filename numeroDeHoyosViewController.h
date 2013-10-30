@@ -11,7 +11,11 @@
 
 @interface numeroDeHoyosViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UIButton *botonAmarillo;
+
+
 
 - (IBAction) numeroHoyos:(UIStoryboardSegue *)segue;
+- (IBAction) colorCampo:(UIButton *) sender;
 
 @end
