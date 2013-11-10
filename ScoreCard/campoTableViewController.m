@@ -8,7 +8,7 @@
 
 #import "campoTableViewController.h"
 #import "campo.h"
-
+#import "numeroDeHoyosViewController.h"
 @interface campoTableViewController ()
 {
     NSUserDefaults *defaults;
@@ -18,6 +18,12 @@
 @implementation campoTableViewController
 
 @synthesize tbl;
+NSUserDefaults *defaults;
+
+NSMutableArray *arraynombrecampos;
+
+
+  //  NSrray *nombresCamposarray = [[NSArray alloc] init];
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,10 +39,37 @@
     [super viewDidLoad];
 
     //cargar el array desde el plist
+    NSArray *arrayCamposAux= [[NSArray alloc] init];
+    NSString *ruta;
     
-    NSString *fichero = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
-    arr = [[NSArray alloc] initWithContentsOfFile:fichero];
-  }
+
+
+    
+ //   NSString *fichero = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
+   
+    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    ruta= [pathArray stringByAppendingPathComponent:@"campos.plist"];
+    
+     NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
+   
+ arrayCamposAux = [diccionariocampos allKeys];
+    
+    arraynombrecampos = [[NSMutableArray alloc] initWithArray:arrayCamposAux ];
+    
+    NSString *nom= [arraynombrecampos objectAtIndex:0];
+    
+    
+    NSLog(@"%@", nom);
+    
+    
+      }
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -55,7 +88,7 @@
 {
 
     // Return the number of rows in the section.
-    return [arr count];
+    return [arraynombrecampos count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,7 +102,7 @@
     }
     // Configure the cell...
     
-    cell.textLabel.text =[arr objectAtIndex:indexPath.row];
+    cell.textLabel.text =[arraynombrecampos objectAtIndex:indexPath.row];
     cell.detailTextLabel.text =@"Elige";
     cell.accessoryType =UITableViewCellAccessoryDetailDisclosureButton;
     
@@ -125,24 +158,26 @@
     
     int arrIndex =[indexPath indexAtPosition:[indexPath length]-1];
     
-    NSString *titulo=[arr objectAtIndex:arrIndex];
+    NSString *titulo=[arraynombrecampos objectAtIndex:arrIndex];
     
     defaults = [NSUserDefaults standardUserDefaults];
     
     [defaults setObject:titulo forKey:@"jugarcampo"] ;
+    [defaults setObject:arraynombrecampos forKey:@"datoscampo"];
     
     [defaults synchronize];
     
-                                       // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    
+    numeroDeHoyosViewController *detailViewController = [[numeroDeHoyosViewController alloc] initWithNibName:@"" bundle:nil];
+    // ...
+    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    [detailViewController release];
+
+
 }
 
 - (IBAction)nuevoCampoBoton:(id)sender {
 }
 @end
+

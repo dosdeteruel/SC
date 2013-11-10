@@ -11,6 +11,9 @@
 
 @interface numeroDeHoyosViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UIButton *botonAmarillo;
+
+
 
 @property (retain, nonatomic) IBOutlet UIButton *rutaBlancaBoton;
 @property (retain, nonatomic) IBOutlet UIButton *rutaAmarillaBoton;
