@@ -100,6 +100,17 @@ NSInteger numHoyos, colorRuta;
 
 }
 
+
+- (IBAction) colorCampo:(UIButton *) sender
+{
+  //  NSString *nombre = sender.tag;
+  //  switch (nombre)
+    {
+ //    case "
+    }
+
+}
+
 - (void)dealloc {
     [_rutaBlancaBoton release];
     [_rutaAmarillaBoton release];

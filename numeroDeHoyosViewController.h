@@ -13,8 +13,6 @@
 
 @property (retain, nonatomic) IBOutlet UIButton *botonAmarillo;
 
-
-
 @property (retain, nonatomic) IBOutlet UIButton *rutaBlancaBoton;
 @property (retain, nonatomic) IBOutlet UIButton *rutaAmarillaBoton;
 @property (retain, nonatomic) IBOutlet UIButton *rutaAzulBoton;

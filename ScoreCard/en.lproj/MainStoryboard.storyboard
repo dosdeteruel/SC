@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" initialViewController="UVb-rL-A8g">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Portada View Controller-->
@@ -562,16 +562,10 @@
     <resources>
         <image name="1.png" width="161" height="121"/>
         <image name="bolablanca.png" width="175" height="184"/>
-        <image name="bolablanca.png" width="175" height="184"/>
-        <image name="boton-amarillo.png" width="500" height="493"/>
         <image name="boton-amarillo.png" width="500" height="493"/>
         <image name="boton-azul.png" width="500" height="508"/>
-        <image name="boton-azul.png" width="500" height="508"/>
-        <image name="boton-blanco.png" width="500" height="489"/>
         <image name="boton-blanco.png" width="500" height="489"/>
         <image name="boton-rojo.png" width="500" height="500"/>
-        <image name="boton-rojo.png" width="500" height="500"/>
-        <image name="botonVolver.png" width="371" height="147"/>
         <image name="botonVolver.png" width="371" height="147"/>
         <image name="dieciochoHoyos.png" width="100" height="100"/>
         <image name="elegirPar3.png" width="29" height="37"/>
@@ -586,7 +580,6 @@
         <image name="ladodcho.png" width="133" height="1140"/>
         <image name="ladoizdo.png" width="133" height="1140"/>
         <image name="nueveHoyos.png" width="100" height="100"/>
-        <image name="pantalla-inicio.png" width="640" height="1136"/>
         <image name="pantalla-inicio.png" width="640" height="1136"/>
         <image name="score-card.jpg" width="640" height="1136"/>
     </resources>
