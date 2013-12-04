@@ -13,9 +13,14 @@
 
 @property (retain, nonatomic) IBOutlet UIButton *botonAmarillo;
 
+@property (retain, nonatomic) IBOutlet UIButton *rutaBlancaBoton;
+@property (retain, nonatomic) IBOutlet UIButton *rutaAmarillaBoton;
+@property (retain, nonatomic) IBOutlet UIButton *rutaAzulBoton;
+@property (retain, nonatomic) IBOutlet UIButton *rutaRojaBoton;
+@property (retain, nonatomic) IBOutlet UIButton *nueveHoyosBoton;
+@property (retain, nonatomic) IBOutlet UIButton *dieciochoHoyosBoton;
+@property (retain, nonatomic) IBOutlet UIButton *pasarPantallaBoton;
 
-
-- (IBAction) numeroHoyos:(UIStoryboardSegue *)segue;
-- (IBAction) colorCampo:(UIButton *) sender;
+- (IBAction) numeroHoyosYColor:(id) sender;
 
 @end

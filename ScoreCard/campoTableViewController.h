@@ -15,8 +15,5 @@ UITableView *tbl;
     
 }
 @property (nonatomic, retain) IBOutlet UITableView *tbl;
-
-
-
-
+- (IBAction)nuevoCampoBoton:(id)sender;
 @end

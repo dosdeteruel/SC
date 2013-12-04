@@ -25,16 +25,17 @@
 
 
 
-@property  NSInteger numeroHoyosCampo;
+@property NSInteger numeroHoyosCampo;
+@property NSInteger color;
 
 //Botones para manejar la pantalla
-- (IBAction)cambiarHoyo:(id)sender;  //llama a cambiardeHoyo
+- (IBAction) cambiarHoyo:(id)sender;  //llama a cambiardeHoyo
 
-- (IBAction)cambiarGolpes:(id)sender;
+- (IBAction) cambiarGolpes:(id)sender;
 
-- (IBAction)elegirPar:(UISegmentedControl *)sender;
+- (IBAction) elegirPar:(UISegmentedControl *)sender;
 
-- (void)cambiardeHoyo:(id)sender;  
+- (void) cambiardeHoyo:(id)sender;
 - (void) grabarEnplist: (NSMutableArray *)mihoyo;
 
 @end

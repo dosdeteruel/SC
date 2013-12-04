@@ -11,6 +11,4 @@
 @interface PortadaViewController : UIViewController
 
 
-- (IBAction) cambiarPantalla;
-
 @end
