@@ -56,12 +56,26 @@
 
 - (IBAction) colorCampo:(UIButton *) sender
 {
-  //  NSString *nombre = sender.tag;
-  //  switch (nombre)
+   UILabel *nombreBoton = sender.titleLabel;
+    
+    if ([nombreBoton.text  isEqual:@"Blancos"])
     {
- //    case "
+    
     }
-
+  
+    if ([nombreBoton.text  isEqual:@"Amarillos"])
+    {
+    
+    }
+  if ([nombreBoton.text  isEqual:@"Azules"])
+  {}
+    
+    
+    if ([nombreBoton.text  isEqual:@"Rojos"])
+    {}
+    
+    
+    
 }
 
 - (void)dealloc {

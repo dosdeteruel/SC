@@ -32,6 +32,7 @@ int golpesTotales;
  //if ([defaults objectForKey:@"jugarcampo"] != nil)
 NSMutableArray *hoyosArray;
 NSString *nombredelcampo;
+NSMutableArray *micampo;
 
 //=[[NSMutableArray alloc] init];
 

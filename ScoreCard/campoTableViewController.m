@@ -21,7 +21,7 @@
 NSUserDefaults *defaults;
 
 NSMutableArray *arraynombrecampos;
-
+NSDictionary * diccionariocampos;
 
   //  NSrray *nombresCamposarray = [[NSArray alloc] init];
 
@@ -51,16 +51,16 @@ NSMutableArray *arraynombrecampos;
     
     ruta= [pathArray stringByAppendingPathComponent:@"campos.plist"];
     
-     NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
+     diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
    
  arrayCamposAux = [diccionariocampos allKeys];
     
     arraynombrecampos = [[NSMutableArray alloc] initWithArray:arrayCamposAux ];
     
-    NSString *nom= [arraynombrecampos objectAtIndex:0];
+ //   NSString *nom= [arraynombrecampos objectAtIndex:0];
     
     
-    NSLog(@"%@", nom);
+ //   NSLog(@"%@", nom);
     
     
       }
@@ -158,10 +158,17 @@ NSMutableArray *arraynombrecampos;
     
     NSString *titulo=[arraynombrecampos objectAtIndex:arrIndex];
     
+    NSMutableArray *micampoaux;
+  //  NSDictionary *micampo;
+    
+    micampoaux = [diccionariocampos objectForKey: titulo];
+    
+  //  micampo= [micampoaux objectAtIndex:0];
+    
     defaults = [NSUserDefaults standardUserDefaults];
     
     [defaults setObject:titulo forKey:@"jugarcampo"] ;
-    [defaults setObject:arraynombrecampos forKey:@"datoscampo"];
+    [defaults setObject:micampoaux forKey:@"datoscampo"];
     
     [defaults synchronize];
     
