@@ -22,11 +22,12 @@
 @property (retain, nonatomic) IBOutlet UISegmentedControl *elegirParSegmentedControl;
 @property (retain, nonatomic) IBOutlet UILabel *labelElegirPar;
 @property (retain, nonatomic) IBOutlet UIButton *volverNumeroHoyosBoton;
+@property (retain, nonatomic) IBOutlet UILabel *labelNombrecampo;
 
-
-
-@property NSInteger numeroHoyosCampo;
 @property NSInteger color;
+@property NSInteger numeroHoyosCampo;
+@property (nonatomic,strong) NSMutableArray *campoo;
+
 
 //Botones para manejar la pantalla
 - (IBAction) cambiarHoyo:(id)sender;  //llama a cambiardeHoyo
@@ -37,5 +38,6 @@
 
 - (void) cambiardeHoyo:(id)sender;
 - (void) grabarEnplist: (NSMutableArray *)mihoyo;
+- (void) cargarValoreshoyo;
 
 @end

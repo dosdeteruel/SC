@@ -93,13 +93,19 @@ NSInteger numHoyos, colorRuta;
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
     ScoreViewController *scoreview = [segue destinationViewController];
 
     scoreview.numeroHoyosCampo = numHoyos;
     scoreview.color = colorRuta;
 
-}
+    // aqui puedo preparar el array final que tendrá solo los datos de mi hoyo o todo. de momento paso todo
+    scoreview.campoo =    [[NSUserDefaults standardUserDefaults] objectForKey: @"datoscampo"];
 
+    
+    
+}
+    
 
 - (IBAction) colorCampo:(UIButton *) sender
 {
