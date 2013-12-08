@@ -40,6 +40,7 @@
 		AE36B9BF1815E69A000FAA29 /* flechadcha.png in Resources */ = {isa = PBXBuildFile; fileRef = AE36B9BD1815E69A000FAA29 /* flechadcha.png */; };
 		AE36B9C01815E69A000FAA29 /* flechaizda.png in Resources */ = {isa = PBXBuildFile; fileRef = AE36B9BE1815E69A000FAA29 /* flechaizda.png */; };
 		AE40F2F01811CD1D00A4450C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */; };
+		AE4F5E6D1853C57800F40FE1 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE4F5E6C1853C57800F40FE1 /* campos.plist */; };
 		AE83136A17DFC64600715A0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136917DFC64600715A0B /* icon.png */; };
 		AE83136C17DFC65200715A0B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136B17DFC65200715A0B /* icon@2x.png */; };
 		AE85EA49181B266400D4B2C6 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE85EA48181B266400D4B2C6 /* campos.plist */; };
@@ -147,6 +148,7 @@
 		AE36B9BD1815E69A000FAA29 /* flechadcha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flechadcha.png; sourceTree = "<group>"; };
 		AE36B9BE1815E69A000FAA29 /* flechaizda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flechaizda.png; sourceTree = "<group>"; };
 		AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE4F5E6C1853C57800F40FE1 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
 		AE83136917DFC64600715A0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AE83136B17DFC65200715A0B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		AE85EA48181B266400D4B2C6 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 		28AEEB4F17C4CA26006EDE3E /* ScoreCard */ = {
 			isa = PBXGroup;
 			children = (
+				AE4F5E6C1853C57800F40FE1 /* campos.plist */,
 				2D12350017D6383500AA7989 /* score-card.jpg */,
 				28AEEB8B17C4CBD1006EDE3E /* images */,
 				28AEEB5817C4CA26006EDE3E /* AppDelegate.h */,
@@ -588,6 +591,7 @@
 				AEE0609417DE6849008B8B9D /* golpe2.png in Resources */,
 				AE0E2BD8180F4D000068F54A /* boton-azul.png in Resources */,
 				AEE0609517DE6849008B8B9D /* golpe1.png in Resources */,
+				AE4F5E6D1853C57800F40FE1 /* campos.plist in Resources */,
 				AEE0609617DE6849008B8B9D /* bolablanca.png in Resources */,
 				AEE0609717DE6849008B8B9D /* bolaverde.png in Resources */,
 				AEE0609817DE6849008B8B9D /* bolaroja.png in Resources */,
