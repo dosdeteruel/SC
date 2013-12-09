@@ -20,8 +20,11 @@
 @implementation ScoreViewController
 
 @synthesize numeroHoyosCampo;
-@synthesize color;
 
+@synthesize labelNombrecampo;
+@synthesize campoo;
+
+@synthesize color;
 NSInteger hoyo;
 int par;
 NSInteger golpesDados;
@@ -33,7 +36,10 @@ int golpesTotales;
  //if ([defaults objectForKey:@"jugarcampo"] != nil)
 NSMutableArray *hoyosArray;
 NSString *nombredelcampo;
+NSMutableArray *micampo;
+NSMutableDictionary *hoyoactual;
 
+NSMutableArray *arraycolor;
 //=[[NSMutableArray alloc] init];
 
 //{
@@ -54,13 +60,27 @@ NSString *nombredelcampo;
 
 - (void)viewDidLoad
 {
+  
+ //   NSMutableArray *aux = [[NSMutableArray alloc ]init];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
     hoyosArray=[NSMutableArray new];
     
-    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    nombredelcampo= [defaults stringForKey:@"jugarcampo"];
+
+    NSString *nombre;
+
+
+    nombre= [[NSUserDefaults standardUserDefaults] stringForKey: @"jugarcampo"];
+ 
+    
+//    NSMutableArray *colorarray= [[NSMutableArray alloc]init];
+    
+    
+   self.labelNombrecampo.text =  nombre;
+    
+    
     
 //aqui carga los hoyos y los datos
     hoyo=1;
@@ -70,9 +90,75 @@ NSString *nombredelcampo;
         NSString * stHoyo = [NSString stringWithFormat:@"%d",hoyo];
         stHoyo = [stHoyo stringByAppendingFormat:@".png"];
         [self.numeroHoyo setImage:[UIImage imageNamed:stHoyo]];
+        
+        
     }
+    [self cargarValoreshoyo];
+    
+    //cargo los datos del primero hoyo
+    //color y golpesdelpar
+    //sacao elemento 1 de diccionario
+  
+  //  hoyoactual = [campoo objectAtIndex:hoyo-1];
+   
+   // hoyoactual = [aux objectAtIndex:hoyo-1];
+//   NSMutableDictionary *micampo= [campoo objectAtIndex:2];
+
+    
+  
+ //   NSString *nombreDeLaPersona= [miDiccionario objectForKey:@”nombre”];
    
     
+}
+- (void) cargarValoreshoyo
+
+
+
+{
+   int num;
+       NSMutableDictionary *hoyoactual= [campoo objectAtIndex:hoyo-1];
+    switch(color)
+    {
+        case 1:
+            //   aux= [campoo objectForKey:@"lonblancohoyo"];
+            //   aux = [campoo objectAtIndex:0];  // cojo el hoyo 1
+            
+            num= [[hoyoactual objectForKey:@"lonblancohoyo"] intValue];
+            break;
+        case 2:
+            num= [[hoyoactual objectForKey:@"lonamarillohoyo"] intValue];
+            break;
+        case 3:
+            num= [[hoyoactual objectForKey:@"lonazulhoyo"] intValue];
+            break;
+        case 4:
+            num= [[hoyoactual objectForKey:@"lonrojohoyo"] intValue];
+            break;
+    }
+    
+    switch (num)
+    {
+        case 3:
+            
+            [self.golpesDelPar setImage:[UIImage imageNamed:@"golpe3.png"]];
+            par = 3;
+            break;
+        case 4:
+            [self.golpesDelPar setImage:[UIImage imageNamed:@"golpe4.png"]];
+            par = 4;
+            
+            break;
+            
+        case 5:
+            [self.golpesDelPar setImage:[UIImage imageNamed:@"golpe5.png"]];
+            par = 5;
+            
+            break;
+            
+            
+    }
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -159,9 +245,14 @@ NSString *nombredelcampo;
         default:
             break;
     }
+    
+    
     NSString * stHoyo = [NSString stringWithFormat:@"%d",hoyo];
     stHoyo = [stHoyo stringByAppendingFormat:@".png"];
     [self.numeroHoyo setImage:[UIImage imageNamed:stHoyo]];
+    
+     [self cargarValoreshoyo];
+    
     
     // cuando llega al último hoyo se graba todo ¡¡¡¡¡
     
@@ -171,7 +262,7 @@ NSString *nombredelcampo;
     //he acabado, a grabar hoyosArray a plist
         [self grabarEnplist: hoyosArray];
         
-            }
+    }
 
 }
 

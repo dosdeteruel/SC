@@ -523,7 +523,7 @@
 				ORGANIZATIONNAME = "Maria Jose";
 				TargetAttributes = {
 					28AEEB4417C4CA26006EDE3E = {
-						DevelopmentTeam = F3WW7CD638;
+						DevelopmentTeam = XAET4E576S;
 					};
 				};
 			};
