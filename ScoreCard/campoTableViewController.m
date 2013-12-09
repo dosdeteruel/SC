@@ -51,9 +51,9 @@ NSMutableArray *arraynombrecampos;
     
     ruta= [pathArray stringByAppendingPathComponent:@"campos.plist"];
     
-     NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
+    NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
    
- arrayCamposAux = [diccionariocampos allKeys];
+    arrayCamposAux = [diccionariocampos allKeys];
     
     arraynombrecampos = [[NSMutableArray alloc] initWithArray:arrayCamposAux ];
     
