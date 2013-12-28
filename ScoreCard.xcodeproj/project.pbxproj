@@ -48,6 +48,7 @@
 		AE973C6B18568BF400425B95 /* campo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE973C6918568BF400425B95 /* campo.png */; };
 		AE973C6C18568BF400425B95 /* seguir.png in Resources */ = {isa = PBXBuildFile; fileRef = AE973C6A18568BF400425B95 /* seguir.png */; };
 		AED6FA0A17E6572500F4F49F /* numeroDeHoyosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED6FA0917E6572500F4F49F /* numeroDeHoyosViewController.m */; };
+		AEDAA9F21857D76D00EE4722 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEDAA9F11857D76D00EE4722 /* campos.plist */; };
 		AEE0608B17DE6849008B8B9D /* ladodcho.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607C17DE6848008B8B9D /* ladodcho.png */; };
 		AEE0608C17DE6849008B8B9D /* ladoizdo.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607D17DE6848008B8B9D /* ladoizdo.png */; };
 		AEE0608D17DE6849008B8B9D /* golpe9.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607E17DE6848008B8B9D /* golpe9.png */; };
@@ -157,6 +158,7 @@
 		AE973C6A18568BF400425B95 /* seguir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seguir.png; sourceTree = "<group>"; };
 		AED6FA0817E6572500F4F49F /* numeroDeHoyosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numeroDeHoyosViewController.h; sourceTree = "<group>"; };
 		AED6FA0917E6572500F4F49F /* numeroDeHoyosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numeroDeHoyosViewController.m; sourceTree = "<group>"; };
+		AEDAA9F11857D76D00EE4722 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
 		AEE0607C17DE6848008B8B9D /* ladodcho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ladodcho.png; sourceTree = "<group>"; };
 		AEE0607D17DE6848008B8B9D /* ladoizdo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ladoizdo.png; sourceTree = "<group>"; };
 		AEE0607E17DE6848008B8B9D /* golpe9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golpe9.png; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		28AEEB4F17C4CA26006EDE3E /* ScoreCard */ = {
 			isa = PBXGroup;
 			children = (
+				AEDAA9F11857D76D00EE4722 /* campos.plist */,
 				2D12350017D6383500AA7989 /* score-card.jpg */,
 				28AEEB8B17C4CBD1006EDE3E /* images */,
 				28AEEB5817C4CA26006EDE3E /* AppDelegate.h */,
@@ -583,6 +586,7 @@
 				AEE0608E17DE6849008B8B9D /* golpe8.png in Resources */,
 				AEE0608F17DE6849008B8B9D /* golpe7.png in Resources */,
 				AEE0609017DE6849008B8B9D /* golpe6.png in Resources */,
+				AEDAA9F21857D76D00EE4722 /* campos.plist in Resources */,
 				AEE0609117DE6849008B8B9D /* golpe5.png in Resources */,
 				AE40F2F01811CD1D00A4450C /* Default-568h@2x.png in Resources */,
 				AEE0609217DE6849008B8B9D /* golpe4.png in Resources */,

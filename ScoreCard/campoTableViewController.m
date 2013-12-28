@@ -50,8 +50,9 @@ NSDictionary * diccionariocampos;
     NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     
     ruta= [pathArray stringByAppendingPathComponent:@"campos.plist"];
-    
-    NSDictionary * diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
+    NSLog(@"Ruta al fichero: %@", ruta);
+ 
+     diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
    
     arrayCamposAux = [diccionariocampos allKeys];
     
