@@ -40,14 +40,15 @@
 		AE36B9BF1815E69A000FAA29 /* flechadcha.png in Resources */ = {isa = PBXBuildFile; fileRef = AE36B9BD1815E69A000FAA29 /* flechadcha.png */; };
 		AE36B9C01815E69A000FAA29 /* flechaizda.png in Resources */ = {isa = PBXBuildFile; fileRef = AE36B9BE1815E69A000FAA29 /* flechaizda.png */; };
 		AE40F2F01811CD1D00A4450C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */; };
-		AE4F5E6D1853C57800F40FE1 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE4F5E6C1853C57800F40FE1 /* campos.plist */; };
 		AE83136A17DFC64600715A0B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136917DFC64600715A0B /* icon.png */; };
 		AE83136C17DFC65200715A0B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE83136B17DFC65200715A0B /* icon@2x.png */; };
-		AE85EA49181B266400D4B2C6 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE85EA48181B266400D4B2C6 /* campos.plist */; };
 		AE95D8EB17DFBAE0006443F8 /* pantalla-score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */; };
 		AE95D8EC17DFBAE0006443F8 /* pelotagolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */; };
 		AE95D8ED17DFBAE0006443F8 /* score-card.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95D8E917DFBAE0006443F8 /* score-card.png */; };
+		AE973C6B18568BF400425B95 /* campo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE973C6918568BF400425B95 /* campo.png */; };
+		AE973C6C18568BF400425B95 /* seguir.png in Resources */ = {isa = PBXBuildFile; fileRef = AE973C6A18568BF400425B95 /* seguir.png */; };
 		AED6FA0A17E6572500F4F49F /* numeroDeHoyosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED6FA0917E6572500F4F49F /* numeroDeHoyosViewController.m */; };
+		AEDAA9F21857D76D00EE4722 /* campos.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEDAA9F11857D76D00EE4722 /* campos.plist */; };
 		AEE0608B17DE6849008B8B9D /* ladodcho.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607C17DE6848008B8B9D /* ladodcho.png */; };
 		AEE0608C17DE6849008B8B9D /* ladoizdo.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607D17DE6848008B8B9D /* ladoizdo.png */; };
 		AEE0608D17DE6849008B8B9D /* golpe9.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE0607E17DE6848008B8B9D /* golpe9.png */; };
@@ -148,15 +149,16 @@
 		AE36B9BD1815E69A000FAA29 /* flechadcha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flechadcha.png; sourceTree = "<group>"; };
 		AE36B9BE1815E69A000FAA29 /* flechaizda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flechaizda.png; sourceTree = "<group>"; };
 		AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AE4F5E6C1853C57800F40FE1 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
 		AE83136917DFC64600715A0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AE83136B17DFC65200715A0B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		AE85EA48181B266400D4B2C6 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
 		AE95D8E717DFBAE0006443F8 /* pantalla-score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pantalla-score-card.png"; sourceTree = "<group>"; };
 		AE95D8E817DFBAE0006443F8 /* pelotagolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pelotagolf.jpg; sourceTree = "<group>"; };
 		AE95D8E917DFBAE0006443F8 /* score-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score-card.png"; sourceTree = "<group>"; };
+		AE973C6918568BF400425B95 /* campo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campo.png; sourceTree = "<group>"; };
+		AE973C6A18568BF400425B95 /* seguir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seguir.png; sourceTree = "<group>"; };
 		AED6FA0817E6572500F4F49F /* numeroDeHoyosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numeroDeHoyosViewController.h; sourceTree = "<group>"; };
 		AED6FA0917E6572500F4F49F /* numeroDeHoyosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numeroDeHoyosViewController.m; sourceTree = "<group>"; };
+		AEDAA9F11857D76D00EE4722 /* campos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = campos.plist; sourceTree = "<group>"; };
 		AEE0607C17DE6848008B8B9D /* ladodcho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ladodcho.png; sourceTree = "<group>"; };
 		AEE0607D17DE6848008B8B9D /* ladoizdo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ladoizdo.png; sourceTree = "<group>"; };
 		AEE0607E17DE6848008B8B9D /* golpe9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golpe9.png; sourceTree = "<group>"; };
@@ -227,7 +229,6 @@
 		28AEEB3A17C4CA26006EDE3E = {
 			isa = PBXGroup;
 			children = (
-				AE85EA48181B266400D4B2C6 /* campos.plist */,
 				AE40F2EF1811CD1D00A4450C /* Default-568h@2x.png */,
 				AE83136B17DFC65200715A0B /* icon@2x.png */,
 				AE83136917DFC64600715A0B /* icon.png */,
@@ -261,7 +262,7 @@
 		28AEEB4F17C4CA26006EDE3E /* ScoreCard */ = {
 			isa = PBXGroup;
 			children = (
-				AE4F5E6C1853C57800F40FE1 /* campos.plist */,
+				AEDAA9F11857D76D00EE4722 /* campos.plist */,
 				2D12350017D6383500AA7989 /* score-card.jpg */,
 				28AEEB8B17C4CBD1006EDE3E /* images */,
 				28AEEB5817C4CA26006EDE3E /* AppDelegate.h */,
@@ -432,6 +433,8 @@
 		AEBCBE7E17DFC18A009804D4 /* Botones de la pantalla */ = {
 			isa = PBXGroup;
 			children = (
+				AE973C6918568BF400425B95 /* campo.png */,
+				AE973C6A18568BF400425B95 /* seguir.png */,
 				AE36B9BD1815E69A000FAA29 /* flechadcha.png */,
 				AE36B9BE1815E69A000FAA29 /* flechaizda.png */,
 				AE0E2BD3180F4D000068F54A /* boton-amarillo.png */,
@@ -562,6 +565,7 @@
 				AEFE84C717DB6AEE004B5E8F /* 4.png in Resources */,
 				AEFE84C817DB6AEE004B5E8F /* 5.png in Resources */,
 				AE0E2BD2180F4C9E0068F54A /* pantalla-inicio.png in Resources */,
+				AE973C6C18568BF400425B95 /* seguir.png in Resources */,
 				AEFE84C917DB6AEE004B5E8F /* 6.png in Resources */,
 				AEFE84CA17DB6AEE004B5E8F /* 7.png in Resources */,
 				AEFE84CB17DB6AEE004B5E8F /* 8.png in Resources */,
@@ -572,7 +576,6 @@
 				AEFE84D017DB6AEE004B5E8F /* 13.png in Resources */,
 				AEFE84D117DB6AEE004B5E8F /* 14.png in Resources */,
 				AEFE84D217DB6AEE004B5E8F /* 15.png in Resources */,
-				AE85EA49181B266400D4B2C6 /* campos.plist in Resources */,
 				AEFE84D317DB6AEE004B5E8F /* 16.png in Resources */,
 				AEFE84D417DB6AEE004B5E8F /* 17.png in Resources */,
 				AE0E2BD9180F4D000068F54A /* boton-blanco.png in Resources */,
@@ -583,6 +586,7 @@
 				AEE0608E17DE6849008B8B9D /* golpe8.png in Resources */,
 				AEE0608F17DE6849008B8B9D /* golpe7.png in Resources */,
 				AEE0609017DE6849008B8B9D /* golpe6.png in Resources */,
+				AEDAA9F21857D76D00EE4722 /* campos.plist in Resources */,
 				AEE0609117DE6849008B8B9D /* golpe5.png in Resources */,
 				AE40F2F01811CD1D00A4450C /* Default-568h@2x.png in Resources */,
 				AEE0609217DE6849008B8B9D /* golpe4.png in Resources */,
@@ -591,7 +595,6 @@
 				AEE0609417DE6849008B8B9D /* golpe2.png in Resources */,
 				AE0E2BD8180F4D000068F54A /* boton-azul.png in Resources */,
 				AEE0609517DE6849008B8B9D /* golpe1.png in Resources */,
-				AE4F5E6D1853C57800F40FE1 /* campos.plist in Resources */,
 				AEE0609617DE6849008B8B9D /* bolablanca.png in Resources */,
 				AEE0609717DE6849008B8B9D /* bolaverde.png in Resources */,
 				AEE0609817DE6849008B8B9D /* bolaroja.png in Resources */,
@@ -604,6 +607,7 @@
 				AEE9BFB217E6F8CF00CA6E7E /* stats.png in Resources */,
 				AE36B9BF1815E69A000FAA29 /* flechadcha.png in Resources */,
 				AEE9BFB417E6F9C100CA6E7E /* play.png in Resources */,
+				AE973C6B18568BF400425B95 /* campo.png in Resources */,
 				AEE9BFB617E6FC5700CA6E7E /* volver.png in Resources */,
 				AEE9BFB917E7272400CA6E7E /* dieciochoHoyos.png in Resources */,
 				AEE9BFBA17E7272400CA6E7E /* nueveHoyos.png in Resources */,
