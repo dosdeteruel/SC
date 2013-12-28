@@ -20,8 +20,8 @@
 @synthesize tbl;
 NSUserDefaults *defaults;
 
-NSMutableArray *arraynombrecampos;
-NSDictionary * diccionariocampos;
+NSArray *arraynombrecampos;
+NSArray * diccionariocampos;
 
   //  NSrray *nombresCamposarray = [[NSArray alloc] init];
 
@@ -39,24 +39,42 @@ NSDictionary * diccionariocampos;
     [super viewDidLoad];
 
     //cargar el array desde el plist
-    NSArray *arrayCamposAux= [[NSArray alloc] init];
+ //   NSArray *arrayCamposAux= [[NSArray alloc] init];
     NSString *ruta;
     
 
+  //  [self S_Cargarcrearcampos];
+    
+    
+    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    ruta= [pathArray stringByAppendingPathComponent:@"nombrescampos.plist"];
+    NSLog(@"Ruta al fichero: %@", ruta);
+    
+
+    arraynombrecampos = [[NSArray alloc] initWithContentsOfFile: ruta] ;
+    
+    
+    
+    
+    
+    
+    
+    
 
     
  //   NSString *fichero = [[NSBundle mainBundle] pathForResource:@"campos" ofType:@"plist"];
-   
-    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+   //
+ //   NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     
-    ruta= [pathArray stringByAppendingPathComponent:@"campos2.plist"];
-    NSLog(@"Ruta al fichero: %@", ruta);
+//    ruta= [pathArray stringByAppendingPathComponent:@"campos2.plist"];
+//    NSLog(@"Ruta al fichero: %@", ruta);
  
-     diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
+ //    diccionariocampos = [[NSDictionary alloc] initWithContentsOfFile: ruta] ;
    
- arrayCamposAux = [diccionariocampos allKeys];
+ //arrayCamposAux = [diccionariocampos allKeys];
     
-    arraynombrecampos = [[NSMutableArray alloc] initWithArray:arrayCamposAux ];
+ //   arraynombrecampos = [[NSMutableArray alloc] initWithArray:arrayCamposAux ];
     
  //   NSString *nom= [arraynombrecampos objectAtIndex:0];
     
@@ -69,6 +87,40 @@ NSDictionary * diccionariocampos;
 
 
 
+- (void)   S_Cargarcrearcampos{
+    NSString *ruta;
+
+ //   NSMutableArray *myArraycampos = [NSMutableArray array];
+//	[myArraycampos addObject:@"Teruel"];
+//	[myArraycampos addObject:@"Negralejo"];
+  //  [myArraycampos addObject:nil];
+    NSArray *myArraycampos = [NSArray arrayWithObjects:@"Teruel", @"Negralejo",nil];    //ahora volcar a plist
+    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    ruta= [pathArray stringByAppendingPathComponent:@"nombrescampos.plist"];
+    NSLog(@"Ruta al fichero: %@", ruta);
+
+    NSData *plistData;
+
+    
+    NSError *error = [[NSError alloc]init];
+    
+    
+    plistData = [NSPropertyListSerialization dataWithPropertyList:myArraycampos format:NSPropertyListXMLFormat_v1_0 options:0 error:&error];
+    
+    
+    if (plistData)
+    {
+        [plistData writeToFile:ruta atomically:YES];
+    }
+    
+    
+ 
+    [myArraycampos release];
+    [plistData release];
+
+    
+}
 
 
 
@@ -89,7 +141,9 @@ NSDictionary * diccionariocampos;
 {
 
     // Return the number of rows in the section.
+      NSLog(@"%d", [arraynombrecampos count]);
     return [arraynombrecampos count];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -107,8 +161,10 @@ NSDictionary * diccionariocampos;
     cell.detailTextLabel.text =@"Elige";
     cell.accessoryType =UITableViewCellAccessoryDetailDisclosureButton;
     
-    
-    return cell;
+    NSLog(@"%@", cell.textLabel.text);
+    //  [arraynombrecampos release];
+      return cell;
+
 }
 
 
@@ -161,17 +217,46 @@ NSDictionary * diccionariocampos;
     
     NSString *titulo=[arraynombrecampos objectAtIndex:arrIndex];
     
-    NSMutableArray *micampoaux;
-  //  NSDictionary *micampo;
+  //  NSMutableArray *micampoauxdatos= [[NSMutableArray alloc]init];
+  
     
-    micampoaux = [diccionariocampos objectForKey: titulo];
     
-  NSMutableDictionary *micampo= [micampoaux objectAtIndex:2];
+    
+    NSString *ruta;
+    
+    
+    NSString *pathArray =    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    NSString *nombrec = [NSString stringWithFormat:@"%@",titulo];
+    nombrec = [nombrec stringByAppendingFormat:@".plist"];
+    
+    
+    
+    
+    
+    ruta= [pathArray stringByAppendingPathComponent:nombrec];
+    NSLog(@"Ruta al fichero: %@", ruta);
+    
+    
+  NSArray  *micampoauxdatos = [[NSArray alloc] initWithContentsOfFile: ruta] ;
+
+    
+    
+    
+//    micampoaux = [diccionariocampos objectForKey: titulo];
+    
+//  NSMutableDictionary *micampo= [micampoaux objectAtIndex:2];
+    
+    
+    
+    //cargar el nuevo fichero con los datos de ese campo
+    
+    
     
     defaults = [NSUserDefaults standardUserDefaults];
     
     [defaults setObject:titulo forKey:@"jugarcampo"] ;
-    [defaults setObject:micampoaux forKey:@"datoscampo"];
+    [defaults setObject:micampoauxdatos forKey:@"datoscampo"];
     
     [defaults synchronize];
     
